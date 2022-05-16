@@ -37,6 +37,10 @@ func main() {
 			Path: "angular/angular",
 		},
 		{
+			Name: "Preact",
+			Path: "preactjs/preact",
+		},
+		{
 			Name: "React",
 			Path: "facebook/react",
 		},
