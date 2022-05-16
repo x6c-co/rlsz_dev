@@ -1,0 +1,58 @@
+{{ define "title" }}{{ .Name }} - Releases{{ end }}
+{{ define "description" }}{{ .Name }} - {{ .Repository.Description }} - Releases{{ end }}
+
+{{ define "canonical" }}
+    {{ if not .Index }}
+    <link rel="canonical" href="https://rlsz.dev/{{ $.Path }}/">
+    {{ end }}
+{{ end }}
+
+{{ define "content" }}
+
+    <section class="col" itemscope itemtype="https://schema.org/SoftwareSourceCode">
+        <h1 itemprop="name">{{ .Name }}</h1>
+        <p>
+            <a href="{{ .Repository.HTMLUrl }}" itemprop="codeRepository" itemscope itemtype="https://schema.org/URL" target="_BLANK">{{ .Repository.HTMLUrl }}</a>
+        </p>
+
+        {{ range .Releases }}
+            <div class="card mb-3 shadow overflow-hidden" data-id="{{ .NodeID }}">
+                <div class="card-header bg-white">
+                    <div class="d-flex justify-content-between align-items-center">
+                        <div class="d-flex align-items-center">
+                            <h2 class="card-title" itemprop="version"><a id="{{ .TagName }}">{{ .TagName }}</a></h2>
+                        </div>
+                        <div>
+                            <a href="#{{ .TagName }}">#</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-body">
+                    {{ .HTML }}
+                </div>
+                <div class="card-footer">
+                    <div class="d-flex align-items-center justify-content-between">
+                        <div class="d-flex align-items-center">
+                            <span class="badge bg-secondary me-1 d-flex align-items-center">
+                                <time datetime="{{ .CreatedAt }}" itemprop="dateCreated">{{ .CreatedAt }}</time>
+                                <img src="/assets/images/calendar.svg" class="ms-1" width="16" height="16" alt="">
+                            </span>
+                            <span class="badge bg-secondary me-1 d-flex align-items-center">
+                                Prerelease
+                                <img src="/assets/images/{{ .PreRelease }}.svg" class="ms-1" width="16" height="16" alt="">
+                            </span>
+                            <span class="badge bg-secondary  me-1 d-flex align-items-center">
+                                Draft
+                                <img src="/assets/images/{{ .Draft }}.svg" class="ms-1" width="16" height="16" alt="">
+                            </span>
+                        </div>
+                        <div>
+                            <a href="{{ .HTMLURL }}" target="_BLANK" title="{{ $.Name }} {{ .TagName }} release on GitHub"><img src="/assets/images/github.png" width="25" height="25" alt=""></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        {{ end }}
+    </section>
+
+{{ end }}

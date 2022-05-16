@@ -1,0 +1,15 @@
+@import "../../node_modules/bootstrap/scss/bootstrap";
+
+footer {
+    background: var(--bs-gray-200);
+}
+footer a {
+    color: #234578;
+}
+.card-header a {
+    color: #023f99;
+}
+
+table {
+    @extend .table, .table-bordered;
+}

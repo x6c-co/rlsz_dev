@@ -1,0 +1,50 @@
+{{ define "base" }}
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ template "title" . }}</title>
+
+    <link href="/assets/css/app.css" rel="stylesheet">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+
+    <meta name="description" content='{{ template "description" . }}'>
+
+    {{ template "canonical" . }}
+</head>
+<body>
+    <header class="container-fluid bg-primary">
+        <nav class="navbar navbar-dark">
+            <div class="container">
+                <a class="navbar-brand" href="/">
+                    <img src="/android-chrome-512x512.png" alt="" width="24" height="24" class="d-inline-block align-text-top">
+                    Releases
+                </a>
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a href="mailto:requests@rlsz.dev" class="nav-link text-white">requests@rlsz.dev</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main class="container mt-3">
+        <div class="row">
+            {{ template "content" . }}
+        </div>
+    </main>
+    <footer class="container-fluid mt-3">
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <a class="lh-lg" href="https://www.flaticon.com/free-icons/release" title="release icons">Release icons created by SBTS2018 - Flaticon</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
+{{ end }}

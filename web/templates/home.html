@@ -1,0 +1,32 @@
+{{ define "title" }}Releases{{ end }}
+{{ define "description" }}Easily search GitHub Releases by the major version.{{ end }}
+
+{{ define "canonical" }}{{ end }}
+
+{{ define "content" }}
+    {{ range .Groups }}
+        <div class="row">
+            <div>
+                <h2>{{ .Title }}</h2>
+            </div>
+
+            {{ range .Projects }}
+                <div class="col-12 col-md-3 mb-3">
+                    <div>
+                        <div class="card shadow">
+                            <div class="card-header">
+                                <h2 class="h5 mb-0"><a class="text-decoration-none" href="/{{ .Path }}">{{ .Name }}</a></h2>
+                            </div>
+                            <div class="list-group list-group-flush">
+                                {{ $path := .Path }}
+                                {{ range .Majors }}
+                                    <a class="list-group-item list-group-item-action" href="/{{ $path }}/{{ . }}.html">{{ . }}</a>
+                                {{ end }}
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            {{ end }}
+        </div>
+    {{ end }}
+{{ end }}
