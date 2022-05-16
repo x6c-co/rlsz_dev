@@ -4,11 +4,10 @@ import (
 	"bytes"
 	"log"
 	"os"
-	"strconv"
 	"text/template"
-	"time"
 
 	"github.com/levidurfee/rlsz_dev/pkg/app"
+	"github.com/levidurfee/rlsz_dev/pkg/config"
 	"github.com/levidurfee/rlsz_dev/pkg/project"
 )
 
@@ -52,10 +51,9 @@ func main() {
 		project.GroupJavascript,
 	}
 
-	stamp := time.Now().UnixMicro()
 	app := app.App{
 		Groups: groups,
-		Stamp:  strconv.FormatInt(stamp, 16),
+		Stamp:  config.Stamp,
 	}
 
 	for _, group := range groups {

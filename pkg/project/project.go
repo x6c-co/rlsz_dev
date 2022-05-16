@@ -4,13 +4,15 @@ import (
 	"sort"
 	"strings"
 
+	"github.com/levidurfee/rlsz_dev/pkg/config"
 	"github.com/levidurfee/rlsz_dev/pkg/github"
 )
 
 // Project represents a project a project on GitHub.
 type Project struct {
-	Name string
-	Path string
+	Name  string
+	Path  string
+	Stamp string
 
 	Repository *github.Repository
 	Releases   []*github.Release
@@ -33,6 +35,8 @@ func (p *Project) Build() error {
 	}
 
 	p.getMajors()
+
+	p.Stamp = config.Stamp
 
 	return nil
 }
