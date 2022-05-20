@@ -10,13 +10,13 @@ import (
 
 // Project represents a project a project on GitHub.
 type Project struct {
-	Name  string
-	Path  string
-	Stamp string
+	Name  string `json:"name"`
+	Path  string `json:"-"`
+	Stamp string `json:"-"`
 
-	Repository *github.Repository
-	Releases   []*github.Release
-	Majors     []string
+	Repository *github.Repository `json:"repository"`
+	Releases   []*github.Release  `json:"releases"`
+	Majors     []string           `json:"majors"`
 
 	Index bool
 }
