@@ -54,7 +54,7 @@ func (p Project) writeMajors() error {
 		for _, release := range releases {
 			// Check if release matches major
 			ver := strings.Split(release.TagName, ".")
-			if ver[0] != major {
+			if ver[0] != major.MajorVersion {
 				continue
 			}
 			// Add it to a temp releases slice
@@ -64,9 +64,9 @@ func (p Project) writeMajors() error {
 		// Set p.Releases to temp releases slice
 		tmpProject.Releases = temp
 		// Update name / title
-		tmpProject.Name = p.Name + " " + major
+		tmpProject.Name = p.Name + " " + major.MajorVersion
 		// Write file
-		write(tmpProject, filepath.Join("build", p.Path), major+".html")
+		write(tmpProject, filepath.Join("build", p.Path), major.MajorVersion+".html")
 	}
 
 	return nil

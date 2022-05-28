@@ -21,6 +21,8 @@ type Release struct {
 	HTML      string
 	CardClass string
 
+	MajorVersion string
+
 	// Specifies the commitish value that determines where the Git tag is
 	// created from. Can be any branch or commit SHA. Unused if the Git tag
 	// already exists. Default: the repository’s default branch (usually master).

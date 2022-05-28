@@ -57,7 +57,7 @@ func main() {
 
 	app := app.App{
 		Groups: groups,
-		Stamp:  config.Stamp,
+		Stamp:  config.Hash,
 	}
 
 	for _, group := range groups {
