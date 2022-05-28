@@ -18,10 +18,13 @@
                             <div class="card-header">
                                 <h2 class="h5 mb-0"><a class="text-decoration-none" href="/{{ .Path }}">{{ .Name }}</a></h2>
                             </div>
-                            <div class="list-group list-group-flush">
+                            <div class="list-group list-group-flush d-flex">
                                 {{ $path := .Path }}
                                 {{ range .Majors }}
-                                    <a class="list-group-item list-group-item-action" href="/{{ $path }}/{{ . }}.html">{{ . }}</a>
+                                    <a class="list-group-item list-group-item-action d-flex justify-content-between" href="/{{ $path }}/{{ .MajorVersion }}.html">
+                                        <span>{{ .MajorVersion }}</span>
+                                        <span>{{ .PublishedAt }}</span>
+                                    </a>
                                 {{ end }}
                             </div>
                         </div>
