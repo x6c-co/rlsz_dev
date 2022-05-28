@@ -23,5 +23,6 @@ go.work
 
 node_modules
 .parcel-cache
+*.json
 
 main

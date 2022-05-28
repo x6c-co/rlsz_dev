@@ -2,6 +2,8 @@ package project
 
 import (
 	"bytes"
+	"encoding/json"
+	"io/ioutil"
 	"log"
 	"os"
 	"path/filepath"
@@ -39,6 +41,8 @@ func (p Project) Write() error {
 
 func (p Project) writeIndex() error {
 	p.Index = true
+	writeJson(p, filepath.Join("build", p.Path), p.Name+"index.json")
+
 	return write(p, filepath.Join("build", p.Path), "index.html")
 }
 
@@ -67,6 +71,7 @@ func (p Project) writeMajors() error {
 		tmpProject.Name = p.Name + " " + major.MajorVersion
 		// Write file
 		write(tmpProject, filepath.Join("build", p.Path), major.MajorVersion+".html")
+		writeJson(tmpProject, filepath.Join("build", p.Path), major.MajorVersion+".json")
 	}
 
 	return nil
@@ -86,6 +91,21 @@ func write(p Project, path, filename string) error {
 	}
 	defer file.Close()
 	file.Write(output.Bytes())
+
+	return nil
+}
+
+func writeJson(p Project, path, filename string) error {
+
+	data, err := json.Marshal(p)
+	if err != nil {
+		return err
+	}
+
+	err = ioutil.WriteFile(path+"/"+filename, data, 0644)
+	if err != nil {
+		return err
+	}
 
 	return nil
 }
