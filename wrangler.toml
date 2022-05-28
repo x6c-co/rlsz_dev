@@ -1,7 +1,3 @@
 name = "rlsz_dev"
 main = "src/index.js"
 compatibility_date = "2022-05-14"
-
-kv_namespaces = [
-  { binding = "RELEASES", id = "27bab0d6364b4a51b019ab92c21b4a6f" }
-]
