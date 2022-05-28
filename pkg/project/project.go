@@ -1,9 +1,6 @@
 package project
 
 import (
-	"sort"
-	"strings"
-
 	"github.com/levidurfee/rlsz_dev/pkg/config"
 	"github.com/levidurfee/rlsz_dev/pkg/github"
 )
@@ -16,7 +13,7 @@ type Project struct {
 
 	Repository *github.Repository `json:"repository"`
 	Releases   []*github.Release  `json:"releases"`
-	Majors     []string           `json:"majors"`
+	Majors     []*github.Release  `json:"majors"`
 
 	Index bool
 }
@@ -68,24 +65,6 @@ func (p *Project) getReleases() error {
 	p.Releases = releases
 
 	return nil
-}
-
-func (p *Project) getMajors() {
-	var majors []string
-
-	for _, release := range p.Releases {
-		version := strings.Split(release.TagName, ".")
-
-		if !contains(majors, version[0]) {
-			majors = append(majors, version[0])
-		}
-	}
-
-	sort.Slice(majors, func(i, j int) bool {
-		return majors[i] > majors[j]
-	})
-
-	p.Majors = majors
 }
 
 func contains(s []string, str string) bool {
