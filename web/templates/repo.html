@@ -35,17 +35,29 @@
                 <div class="card-footer">
                     <div class="d-flex align-items-center justify-content-between">
                         <div class="d-flex align-items-center">
-                            <span class="badge bg-secondary me-1 d-flex align-items-center">
-                                <time datetime="{{ .CreatedAt }}" itemprop="dateCreated">{{ .CreatedAt }}</time>
-                                <img src="/assets/images/calendar.svg" class="ms-1" width="16" height="16" alt="">
+                            <span class="d-flex me-2">
+                                <span class="bg-primary text-white p-2 rounded-start d-flex align-items-center">Created</span>
+                                <span class="bg-white border border-primary p-2 rounded-end">
+                                    <time datetime="{{ .CreatedAt }}" itemprop="dateCreated">{{ .CreatedAt }}</time>
+                                </span>
                             </span>
-                            <span class="badge bg-secondary me-1 d-flex align-items-center">
-                                Prerelease
-                                <img src="/assets/images/{{ .PreRelease }}.svg" class="ms-1" width="16" height="16" alt="">
+                            <span class="d-flex me-2">
+                                <span class="bg-success text-white p-2 rounded-start d-flex align-items-center">Published</span>
+                                <span class="bg-white border border-success p-2 rounded-end">
+                                    <time datetime="{{ .PublishedAt }}" itemprop="datePublished">{{ .PublishedAt }}</time>
+                                </span>
                             </span>
-                            <span class="badge bg-secondary  me-1 d-flex align-items-center">
-                                Draft
-                                <img src="/assets/images/{{ .Draft }}.svg" class="ms-1" width="16" height="16" alt="">
+                            <span class="d-flex me-2">
+                                <span class="bg-warning p-2 rounded-start d-flex align-items-center">Prerelease</span>
+                                <span class="bg-white p-2 border border-warning rounded-end d-flex align-items-center">
+                                    <img src="/assets/images/{{ .PreRelease }}.svg?v=2" width="16" height="16" alt="">
+                                </span>
+                            </span>
+                            <span class="d-flex me-2">
+                                <span class="bg-info p-2 rounded-start d-flex align-items-center">Draft</span>
+                                <span class="bg-white p-2 border border-info rounded-end d-flex align-items-center">
+                                    <img src="/assets/images/{{ .Draft }}.svg?v=2" width="16" height="16" alt="">
+                                </span>
                             </span>
                         </div>
                         <div>
