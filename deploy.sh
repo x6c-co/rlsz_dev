@@ -8,4 +8,5 @@ fi
 
 ./main
 npm run build
-npx wrangler pages publish build --commit-dirty=true
+# npx wrangler pages publish build --commit-dirty=true
+scp -r ./build/* levi@x6c.us:/var/www/html/rlsz_dev/
