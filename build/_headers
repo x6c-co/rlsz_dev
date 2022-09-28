@@ -3,7 +3,7 @@
   X-Content-Type-Options: nosniff
   Referrer-Policy: no-referrer
   Permissions-Policy: document-domain=()
-  Content-Security-Policy: default-src 'self'; script-src 'report-sample' 'self' https://static.cloudflareinsights.com/beacon.min.js; style-src 'report-sample' 'self'; object-src 'none'; base-uri 'self'; connect-src 'self' https://cloudflareinsights.com; font-src 'self'; frame-src 'self'; img-src 'self' https://img.shields.io; manifest-src 'self'; media-src 'self'; report-uri https://627fbaf6f77888cb98a09efe.endpoint.csper.io/?v=0; worker-src 'none';
+  Content-Security-Policy: default-src 'self'; script-src 'report-sample' 'self' https://static.cloudflareinsights.com/beacon.min.js https://www.googletagmanager.com/ 'nonce-EDNnf03nceIOfn39fn3e9h3sdfa'; style-src 'report-sample' 'self'; object-src 'none'; base-uri 'self'; connect-src 'self' https://cloudflareinsights.com https://www.google-analytics.com/; font-src 'self'; frame-src 'self'; img-src 'self' https://img.shields.io; manifest-src 'self'; media-src 'self'; report-uri https://627fbaf6f77888cb98a09efe.endpoint.csper.io/?v=0; worker-src 'none';
 
 https://:project.pages.dev/*
   X-Robots-Tag: noindex
