@@ -1,0 +1,412 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>React v18 - Releases</title>
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-CNZF5R22P8"></script>
+    <script nonce="EDNnf03nceIOfn39fn3e9h3sdfa">
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-CNZF5R22P8');
+    </script>
+
+    <link href="/assets/css/app.css?ts=5ff0f5694c6e5" rel="stylesheet">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+
+    <meta name="description" content='React v18 - The library for web and native user interfaces - Releases'>
+
+    
+    
+    <link rel="canonical" href="https://rlsz.dev/facebook/react/">
+    
+
+</head>
+<body>
+    <header class="container-fluid bg-primary">
+        <nav class="navbar navbar-dark">
+            <div class="container">
+                <a class="navbar-brand" href="/">
+                    <img src="/android-chrome-512x512.png" alt="" width="24" height="24" class="d-inline-block align-text-top">
+                    Releases
+                </a>
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a href="mailto:requests@rlsz.dev" class="nav-link text-white">requests@rlsz.dev</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main class="container mt-3">
+        <div class="row">
+            
+
+    <section class="col" itemscope itemtype="https://schema.org/SoftwareSourceCode">
+        <h1 itemprop="name">React v18</h1>
+        <p>
+            <a href="https://github.com/facebook/react" itemprop="codeRepository" itemscope itemtype="https://schema.org/URL" target="_BLANK">https://github.com/facebook/react</a>
+        </p>
+
+        
+            <div class="card mb-3 shadow overflow-hidden" data-id="RE_kwDOAJy2Ks4EI4_d">
+                <div class="card-header bg-white">
+                    <div class="d-flex justify-content-between align-items-center">
+                        <div class="d-flex align-items-center">
+                            <h2 class="card-title" itemprop="version"><a id="v18.2.0">v18.2.0</a></h2>
+                        </div>
+                        <div>
+                            <a href="#v18.2.0">#</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-body">
+                    <h3>React DOM</h3>
+<ul>
+<li>Provide a component stack as a second argument to <code>onRecoverableError</code>. (<a href="https://github.com/gnoff">@gnoff</a> in <a href="https://github.com/facebook/react/pull/24591">#24591</a>)</li>
+<li>Fix hydrating into <code>document</code> causing a blank page on mismatch. (<a href="https://github.com/gnoff">@gnoff</a> in <a href="https://github.com/facebook/react/pull/24523">#24523</a>)</li>
+<li>Fix false positive hydration errors with Suspense. (<a href="https://github.com/gnoff">@gnoff</a> in <a href="https://github.com/facebook/react/pull/24480">#24480</a> and  <a href="https://github.com/acdlite">@acdlite</a> in <a href="https://github.com/facebook/react/pull/24532">#24532</a>)</li>
+<li>Fix ignored <code>setState</code> in Safari when adding an iframe. (<a href="https://github.com/gaearon">@gaearon</a> in <a href="https://github.com/facebook/react/pull/24459">#24459</a>)</li>
+</ul>
+<h3>React DOM Server</h3>
+<ul>
+<li>Pass information about server errors to the client. (<a href="https://github.com/salazarm">@salazarm</a> and <a href="https://github.com/gnoff">@gnoff</a> in <a href="https://github.com/facebook/react/pull/24551">#24551</a> and <a href="https://github.com/facebook/react/pull/24591">#24591</a>)</li>
+<li>Allow to provide a reason when aborting the HTML stream. (<a href="https://github.com/gnoff">@gnoff</a> in <a href="https://github.com/facebook/react/pull/24680">#24680</a>)</li>
+<li>Eliminate extraneous text separators in the HTML where possible. (<a href="https://github.com/gnoff">@gnoff</a> in <a href="https://github.com/facebook/react/pull/24630">#24630</a>)</li>
+<li>Disallow complex children inside <code>&lt;title&gt;</code> elements to match the browser constraints. (<a href="https://github.com/gnoff">@gnoff</a> in <a href="https://github.com/facebook/react/pull/24679">#24679</a>)</li>
+<li>Fix buffering in some worker environments by explicitly setting <code>highWaterMark</code> to <code>0</code>. (<a href="https://github.com/jplhomer">@jplhomer</a> in <a href="https://github.com/facebook/react/pull/24641">#24641</a>)</li>
+</ul>
+<h3>Server Components (Experimental)</h3>
+<ul>
+<li>Add support for <code>useId()</code> inside Server Components. (<a href="https://github.com/gnoff">@gnoff</a>) in <a href="https://github.com/facebook/react/pull/24172">#24172</a></li>
+</ul>
+
+                </div>
+                <div class="card-footer">
+                    <div class="d-flex align-items-center justify-content-between">
+                        <div class="d-flex align-items-center">
+                            <span class="d-flex me-2">
+                                <span class="bg-primary text-white p-2 rounded-start d-flex align-items-center">Created</span>
+                                <span class="bg-white border border-primary p-2 rounded-end">
+                                    <time datetime="2022-06-14" itemprop="dateCreated">2022-06-14</time>
+                                </span>
+                            </span>
+                            <span class="d-flex me-2">
+                                <span class="bg-success text-white p-2 rounded-start d-flex align-items-center">Published</span>
+                                <span class="bg-white border border-success p-2 rounded-end">
+                                    <time datetime="2022-06-14" itemprop="datePublished">2022-06-14</time>
+                                </span>
+                            </span>
+                            <span class="d-flex me-2">
+                                <span class="bg-warning p-2 rounded-start d-flex align-items-center">Prerelease</span>
+                                <span class="bg-white p-2 border border-warning rounded-end d-flex align-items-center">
+                                    <img src="/assets/images/false.svg?v=2" width="16" height="16" alt="">
+                                </span>
+                            </span>
+                            <span class="d-flex me-2">
+                                <span class="bg-info p-2 rounded-start d-flex align-items-center">Draft</span>
+                                <span class="bg-white p-2 border border-info rounded-end d-flex align-items-center">
+                                    <img src="/assets/images/false.svg?v=2" width="16" height="16" alt="">
+                                </span>
+                            </span>
+                        </div>
+                        <div>
+                            <a href="https://github.com/facebook/react/releases/tag/v18.2.0" target="_BLANK" title="React v18 v18.2.0 release on GitHub"><img src="/assets/images/github.png" width="25" height="25" alt=""></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        
+            <div class="card mb-3 shadow overflow-hidden" data-id="RE_kwDOAJy2Ks4D5gd1">
+                <div class="card-header bg-white">
+                    <div class="d-flex justify-content-between align-items-center">
+                        <div class="d-flex align-items-center">
+                            <h2 class="card-title" itemprop="version"><a id="v18.1.0">v18.1.0</a></h2>
+                        </div>
+                        <div>
+                            <a href="#v18.1.0">#</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-body">
+                    <h3>React DOM</h3>
+<ul>
+<li>Fix the false positive warning about <code>react-dom/client</code> when using UMD bundle. (<a href="https://github.com/alireza-molaee">@alireza-molaee</a> in <a href="https://github.com/facebook/react/pull/24274">#24274</a>)</li>
+<li>Fix <code>suppressHydrationWarning</code> to work in production too. (<a href="https://github.com/gaearon">@gaearon</a> in <a href="https://github.com/facebook/react/pull/24271">#24271</a>)</li>
+<li>Fix <code>componentWillUnmount</code> firing twice inside of Suspense. (<a href="https://github.com/acdlite">@acdlite</a> in <a href="https://github.com/facebook/react/pull/24308">#24308</a>)</li>
+<li>Fix some transition updates being ignored. (<a href="https://github.com/acdlite">@acdlite</a> in <a href="https://github.com/facebook/react/pull/24353">#24353</a>)</li>
+<li>Fix <code>useDeferredValue</code> causing an infinite loop when passed an unmemoized value. (<a href="https://github.com/acdlite">@acdlite</a> in <a href="https://github.com/facebook/react/pull/24247">#24247</a>)</li>
+<li>Fix throttling of revealing Suspense fallbacks. (<a href="https://github.com/sunderls">@sunderls</a> in <a href="https://github.com/facebook/react/pull/24253">#24253</a>)</li>
+<li>Fix an inconsistency in whether the props object is the same between renders. (<a href="https://github.com/Andarist">@Andarist</a> and <a href="https://github.com/acdlite">@acdlite</a> in <a href="https://github.com/facebook/react/pull/24421">#24421</a>)</li>
+<li>Fix a missing warning about a <code>setState</code> loop in <code>useEffect</code>. (<a href="https://github.com/gaearon">@gaearon</a> in <a href="https://github.com/facebook/react/pull/24298">#24298</a>)</li>
+<li>Fix a spurious hydration error. (<a href="https://github.com/gnoff">@gnoff</a> in <a href="https://github.com/facebook/react/pull/24404">#24404</a>)</li>
+<li>Warn when calling <code>setState</code> in <code>useInsertionEffect</code>. (<a href="https://github.com/gaearon">@gaearon</a> in <a href="https://github.com/facebook/react/pull/24295">#24295</a>)</li>
+<li>Ensure the reason for hydration errors is always displayed. (<a href="https://github.com/gaearon">@gaearon</a> in <a href="https://github.com/facebook/react/pull/24276">#24276</a>)</li>
+</ul>
+<h3>React DOM Server</h3>
+<ul>
+<li>Fix escaping for the <code>bootstrapScriptContent</code> contents. (<a href="https://github.com/gnoff">@gnoff</a> in <a href="https://github.com/facebook/react/pull/24385">#24385</a>)</li>
+<li>Significantly improve performance of <code>renderToPipeableStream</code>. (<a href="https://github.com/gnoff">@gnoff</a> in <a href="https://github.com/facebook/react/pull/24291">#24291</a>)</li>
+</ul>
+<h3>ESLint Plugin: React Hooks</h3>
+<ul>
+<li>Fix false positive errors with a large number of branches. (<a href="https://github.com/scyron6">@scyron6</a> in <a href="https://github.com/facebook/react/pull/24287">#24287</a>)</li>
+<li>Don't consider a known dependency stable when the variable is reassigned. (<a href="https://github.com/afzalsayed96">@afzalsayed96</a> in <a href="https://github.com/facebook/react/pull/24343">#24343</a>)</li>
+</ul>
+<h3>Use Subscription</h3>
+<ul>
+<li>Replace the implementation with the <code>use-sync-external-store</code> shim. (<a href="https://github.com/gaearon">@gaearon</a> in <a href="https://github.com/facebook/react/pull/24289">#24289</a>)</li>
+</ul>
+
+                </div>
+                <div class="card-footer">
+                    <div class="d-flex align-items-center justify-content-between">
+                        <div class="d-flex align-items-center">
+                            <span class="d-flex me-2">
+                                <span class="bg-primary text-white p-2 rounded-start d-flex align-items-center">Created</span>
+                                <span class="bg-white border border-primary p-2 rounded-end">
+                                    <time datetime="2022-04-26" itemprop="dateCreated">2022-04-26</time>
+                                </span>
+                            </span>
+                            <span class="d-flex me-2">
+                                <span class="bg-success text-white p-2 rounded-start d-flex align-items-center">Published</span>
+                                <span class="bg-white border border-success p-2 rounded-end">
+                                    <time datetime="2022-04-26" itemprop="datePublished">2022-04-26</time>
+                                </span>
+                            </span>
+                            <span class="d-flex me-2">
+                                <span class="bg-warning p-2 rounded-start d-flex align-items-center">Prerelease</span>
+                                <span class="bg-white p-2 border border-warning rounded-end d-flex align-items-center">
+                                    <img src="/assets/images/false.svg?v=2" width="16" height="16" alt="">
+                                </span>
+                            </span>
+                            <span class="d-flex me-2">
+                                <span class="bg-info p-2 rounded-start d-flex align-items-center">Draft</span>
+                                <span class="bg-white p-2 border border-info rounded-end d-flex align-items-center">
+                                    <img src="/assets/images/false.svg?v=2" width="16" height="16" alt="">
+                                </span>
+                            </span>
+                        </div>
+                        <div>
+                            <a href="https://github.com/facebook/react/releases/tag/v18.1.0" target="_BLANK" title="React v18 v18.1.0 release on GitHub"><img src="/assets/images/github.png" width="25" height="25" alt=""></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        
+            <div class="card mb-3 shadow overflow-hidden" data-id="RE_kwDOAJy2Ks4DwkN8">
+                <div class="card-header bg-white">
+                    <div class="d-flex justify-content-between align-items-center">
+                        <div class="d-flex align-items-center">
+                            <h2 class="card-title" itemprop="version"><a id="v18.0.0">v18.0.0</a></h2>
+                        </div>
+                        <div>
+                            <a href="#v18.0.0">#</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-body">
+                    <p>Below is a list of all new features, APIs, deprecations, and breaking changes.<br />
+Read <a href="https://reactjs.org/blog/2022/03/29/react-v18.html">React 18 release post</a> and <a href="https://reactjs.org/blog/2022/03/08/react-18-upgrade-guide.html">React 18 upgrade guide</a> for more information.</p>
+<h3>New Features</h3>
+<h3>React</h3>
+<ul>
+<li><code>useId</code> is a new hook for generating unique IDs on both the client and server, while avoiding hydration mismatches. It is primarily useful for component libraries integrating with accessibility APIs that require unique IDs. This solves an issue that already exists in React 17 and below, but it’s even more important in React 18 because of how the new streaming server renderer delivers HTML out-of-order.</li>
+<li><code>startTransition</code> and <code>useTransition</code> let you mark some state updates as not urgent. Other state updates are considered urgent by default. React will allow urgent state updates (for example, updating a text input) to interrupt non-urgent state updates (for example, rendering a list of search results).</li>
+<li><code>useDeferredValue</code> lets you defer re-rendering a non-urgent part of the tree. It is similar to debouncing, but has a few advantages compared to it. There is no fixed time delay, so React will attempt the deferred render right after the first render is reflected on the screen. The deferred render is interruptible and doesn't block user input.</li>
+<li><code>useSyncExternalStore</code> is a new hook that allows external stores to support concurrent reads by forcing updates to the store to be synchronous. It removes the need for <code>useEffect</code> when implementing subscriptions to external data sources, and is recommended for any library that integrates with state external to React.</li>
+<li><code>useInsertionEffect</code> is a new hook that allows CSS-in-JS libraries to address performance issues of injecting styles in render. Unless you’ve already built a CSS-in-JS library we don’t expect you to ever use this. This hook will run after the DOM is mutated, but before layout effects read the new layout. This solves an issue that already exists in React 17 and below, but is even more important in React 18 because React yields to the browser during concurrent rendering, giving it a chance to recalculate layout.</li>
+</ul>
+<h3>React DOM Client</h3>
+<p>These new APIs are now exported from <code>react-dom/client</code>:</p>
+<ul>
+<li><code>createRoot</code>: New method to create a root to <code>render</code> or <code>unmount</code>. Use it instead of <code>ReactDOM.render</code>. New features in React 18 don't work without it.</li>
+<li><code>hydrateRoot</code>: New method to hydrate a server rendered application. Use it instead of <code>ReactDOM.hydrate</code> in conjunction with the new React DOM Server APIs. New features in React 18 don't work without it.</li>
+</ul>
+<p>Both <code>createRoot</code> and <code>hydrateRoot</code> accept a new option called <code>onRecoverableError</code> in case you want to be notified when React recovers from errors during rendering or hydration for logging. By default, React will use <a href="https://developer.mozilla.org/en-US/docs/Web/API/reportError"><code>reportError</code></a>, or <code>console.error</code> in the older browsers.</p>
+<h3>React DOM Server</h3>
+<p>These new APIs are now exported from <code>react-dom/server</code> and have full support for streaming Suspense on the server:</p>
+<ul>
+<li><code>renderToPipeableStream</code>: for streaming in Node environments.</li>
+<li><code>renderToReadableStream</code>: for modern edge runtime environments, such as Deno and Cloudflare workers.</li>
+</ul>
+<p>The existing <code>renderToString</code> method keeps working but is discouraged.</p>
+<h2>Deprecations</h2>
+<ul>
+<li><code>react-dom</code>: <code>ReactDOM.render</code> has been deprecated. Using it will warn and run your app in React 17 mode.</li>
+<li><code>react-dom</code>: <code>ReactDOM.hydrate</code> has been deprecated. Using it will warn and run your app in React 17 mode.</li>
+<li><code>react-dom</code>: <code>ReactDOM.unmountComponentAtNode</code> has been deprecated.</li>
+<li><code>react-dom</code>: <code>ReactDOM.renderSubtreeIntoContainer</code> has been deprecated.</li>
+<li><code>react-dom/server</code>: <code>ReactDOMServer.renderToNodeStream</code> has been deprecated.</li>
+</ul>
+<h2>Breaking Changes</h2>
+<h3>React</h3>
+<ul>
+<li><strong>Automatic batching:</strong> This release introduces a performance improvement that changes to the way React batches updates to do more batching automatically. See <a href="https://github.com/reactwg/react-18/discussions/21">Automatic batching for fewer renders in React 18</a> for more info. In the rare case that you need to opt out, wrap the state update in <code>flushSync</code>.</li>
+<li><strong>Stricter Strict Mode</strong>: In the future, React will provide a feature that lets components preserve state between unmounts. To prepare for it, React 18 introduces a new development-only check to Strict Mode. React will automatically unmount and remount every component, whenever a component mounts for the first time, restoring the previous state on the second mount. If this breaks your app, consider removing Strict Mode until you can fix the components to be resilient to remounting with existing state.</li>
+<li><strong>Consistent useEffect timing</strong>: React now always synchronously flushes effect functions if the update was triggered during a discrete user input event such as a click or a keydown event. Previously, the behavior wasn't always predictable or consistent.</li>
+<li><strong>Stricter hydration errors</strong>: Hydration mismatches due to missing or extra text content are now treated like errors instead of warnings. React will no longer attempt to &quot;patch up&quot; individual nodes by inserting or deleting a node on the client in an attempt to match the server markup, and will revert to client rendering up to the closest <code>&lt;Suspense&gt;</code> boundary in the tree. This ensures the hydrated tree is consistent and avoids potential privacy and security holes that can be caused by hydration mismatches.</li>
+<li><strong>Suspense trees are always consistent:</strong> If a component suspends before it's fully added to the tree, React will not add it to the tree in an incomplete state or fire its effects. Instead, React will throw away the new tree completely, wait for the asynchronous operation to finish, and then retry rendering again from scratch. React will render the retry attempt concurrently, and without blocking the browser.</li>
+<li><strong>Layout Effects with Suspense</strong>: When a tree re-suspends and reverts to a fallback, React will now clean up layout effects, and then re-create them when the content inside the boundary is shown again. This fixes an issue which prevented component libraries from correctly measuring layout when used with Suspense.</li>
+<li><strong>New JS Environment Requirements</strong>: React now depends on modern browsers features including <code>Promise</code>, <code>Symbol</code>, and <code>Object.assign</code>. If you support older browsers and devices such as Internet Explorer which do not provide modern browser features natively or have non-compliant implementations, consider including a global polyfill in your bundled application.</li>
+</ul>
+<h3>Scheduler (Experimental)</h3>
+<ul>
+<li>Remove unstable <code>scheduler/tracing</code> API</li>
+</ul>
+<h2>Notable Changes</h2>
+<h3>React</h3>
+<ul>
+<li><strong>Components can now render <code>undefined</code>:</strong> React no longer throws if you return <code>undefined</code> from a component. This makes the allowed component return values consistent with values that are allowed in the middle of a component tree. We suggest to use a linter to prevent mistakes like forgetting a <code>return</code> statement before JSX.</li>
+<li><strong>In tests, <code>act</code> warnings are now opt-in:</strong> If you're running end-to-end tests, the <code>act</code> warnings are unnecessary. We've introduced an <a href="https://github.com/reactwg/react-18/discussions/102">opt-in</a> mechanism so you can enable them only for unit tests where they are useful and beneficial.</li>
+<li><strong>No warning about <code>setState</code> on unmounted components:</strong> Previously, React warned about memory leaks when you call <code>setState</code> on an unmounted component. This warning was added for subscriptions, but people primarily run into it in scenarios where setting state is fine, and workarounds make the code worse. We've <a href="https://github.com/facebook/react/pull/22114">removed</a> this warning.</li>
+<li><strong>No suppression of console logs:</strong> When you use Strict Mode, React renders each component twice to help you find unexpected side effects. In React 17, we've suppressed console logs for one of the two renders to make the logs easier to read. In response to <a href="https://github.com/facebook/react/issues/21783">community feedback</a> about this being confusing, we've removed the suppression. Instead, if you have React DevTools installed, the second log's renders will be displayed in grey, and there will be an option (off by default) to suppress them completely.</li>
+<li><strong>Improved memory usage:</strong> React now cleans up more internal fields on unmount, making the impact from unfixed memory leaks that may exist in your application code less severe.</li>
+</ul>
+<h3>React DOM Server</h3>
+<ul>
+<li><strong><code>renderToString</code>:</strong> Will no longer error when suspending on the server. Instead, it will emit the fallback HTML for the closest <code>&lt;Suspense&gt;</code> boundary and then retry rendering the same content on the client. It is still recommended that you switch to a streaming API like <code>renderToPipeableStream</code> or <code>renderToReadableStream</code> instead.</li>
+<li><strong><code>renderToStaticMarkup</code>:</strong> Will no longer error when suspending on the server. Instead, it will emit the fallback HTML for the closest <code>&lt;Suspense&gt;</code> boundary and retry rendering on the client.</li>
+</ul>
+<h2>All Changes</h2>
+<h2>React</h2>
+<ul>
+<li>Add <code>useTransition</code> and <code>useDeferredValue</code> to separate urgent updates from transitions. (<a href="https://github.com/facebook/react/pull/10426">#10426</a>, <a href="https://github.com/facebook/react/pull/10715">#10715</a>, <a href="https://github.com/facebook/react/pull/15593">#15593</a>, <a href="https://github.com/facebook/react/pull/15272">#15272</a>, <a href="https://github.com/facebook/react/pull/15578">#15578</a>, <a href="https://github.com/facebook/react/pull/15769">#15769</a>, <a href="https://github.com/facebook/react/pull/17058">#17058</a>, <a href="https://github.com/facebook/react/pull/18796">#18796</a>, <a href="https://github.com/facebook/react/pull/19121">#19121</a>, <a href="https://github.com/facebook/react/pull/19703">#19703</a>, <a href="https://github.com/facebook/react/pull/19719">#19719</a>, <a href="https://github.com/facebook/react/pull/19724">#19724</a>, <a href="https://github.com/facebook/react/pull/20672">#20672</a>, <a href="https://github.com/facebook/react/pull/20976">#20976</a> by <a href="https://github.com/acdlite">@acdlite</a>, <a href="https://github.com/lunaruan">@lunaruan</a>, <a href="https://github.com/rickhanlonii">@rickhanlonii</a>, and <a href="https://github.com/sebmarkbage">@sebmarkbage</a>)</li>
+<li>Add <code>useId</code> for generating unique IDs. (<a href="https://github.com/facebook/react/pull/17322">#17322</a>, <a href="https://github.com/facebook/react/pull/18576">#18576</a>, <a href="https://github.com/facebook/react/pull/22644">#22644</a>, <a href="https://github.com/facebook/react/pull/22672">#22672</a>, <a href="https://github.com/facebook/react/pull/21260">#21260</a> by <a href="https://github.com/acdlite">@acdlite</a>, <a href="https://github.com/lunaruan">@lunaruan</a>, and <a href="https://github.com/sebmarkbage">@sebmarkbage</a>)</li>
+<li>Add <code>useSyncExternalStore</code> to help external store libraries integrate with React. (<a href="https://github.com/facebook/react/pull/15022">#15022</a>, <a href="https://github.com/facebook/react/pull/18000">#18000</a>, <a href="https://github.com/facebook/react/pull/18771">#18771</a>, <a href="https://github.com/facebook/react/pull/22211">#22211</a>, <a href="https://github.com/facebook/react/pull/22292">#22292</a>, <a href="https://github.com/facebook/react/pull/22239">#22239</a>, <a href="https://github.com/facebook/react/pull/22347">#22347</a>, <a href="https://github.com/facebook/react/pull/23150">#23150</a> by <a href="https://github.com/acdlite">@acdlite</a>, <a href="https://github.com/bvaughn">@bvaughn</a>, and <a href="https://github.com/drarmstr">@drarmstr</a>)</li>
+<li>Add <code>startTransition</code> as a version of <code>useTransition</code> without pending feedback. (<a href="https://github.com/facebook/react/pull/19696">#19696</a> by <a href="https://github.com/rickhanlonii">@rickhanlonii</a>)</li>
+<li>Add <code>useInsertionEffect</code> for CSS-in-JS libraries. (<a href="https://github.com/facebook/react/pull/21913">#21913</a> by <a href="https://github.com/rickhanlonii">@rickhanlonii</a>)</li>
+<li>Make Suspense remount layout effects when content reappears. (<a href="https://github.com/facebook/react/pull/19322">#19322</a>, <a href="https://github.com/facebook/react/pull/19374">#19374</a>, <a href="https://github.com/facebook/react/pull/19523">#19523</a>, <a href="https://github.com/facebook/react/pull/20625">#20625</a>, <a href="https://github.com/facebook/react/pull/21079">#21079</a> by <a href="https://github.com/acdlite">@acdlite</a>, <a href="https://github.com/bvaughn">@bvaughn</a>, and <a href="https://github.com/lunaruan">@lunaruan</a>)</li>
+<li>Make <code>&lt;StrictMode&gt;</code> re-run effects to check for restorable state. (<a href="https://github.com/facebook/react/pull/19523">#19523</a> , <a href="https://github.com/facebook/react/pull/21418">#21418</a> by <a href="https://github.com/bvaughn">@bvaughn</a> and <a href="https://github.com/lunaruan">@lunaruan</a>)</li>
+<li>Assume Symbols are always available. (<a href="https://github.com/facebook/react/pull/23348">#23348</a> by <a href="https://github.com/sebmarkbage">@sebmarkbage</a>)</li>
+<li>Remove <code>object-assign</code> polyfill. (<a href="https://github.com/facebook/react/pull/23351">#23351</a> by <a href="https://github.com/sebmarkbage">@sebmarkbage</a>)</li>
+<li>Remove unsupported <code>unstable_changedBits</code> API. (<a href="https://github.com/facebook/react/pull/20953">#20953</a> by <a href="https://github.com/acdlite">@acdlite</a>)</li>
+<li>Allow components to render undefined. (<a href="https://github.com/facebook/react/pull/21869">#21869</a> by <a href="https://github.com/rickhanlonii">@rickhanlonii</a>)</li>
+<li>Flush <code>useEffect</code> resulting from discrete events like clicks synchronously. (<a href="https://github.com/facebook/react/pull/21150">#21150</a> by <a href="https://github.com/acdlite">@acdlite</a>)</li>
+<li>Suspense <code>fallback={undefined}</code> now behaves the same as <code>null</code> and isn't ignored. (<a href="https://github.com/facebook/react/pull/21854">#21854</a> by <a href="https://github.com/rickhanlonii">@rickhanlonii</a>)</li>
+<li>Consider all <code>lazy()</code> resolving to the same component equivalent. (<a href="https://github.com/facebook/react/pull/20357">#20357</a> by <a href="https://github.com/sebmarkbage">@sebmarkbage</a>)</li>
+<li>Don't patch console during first render. (<a href="https://github.com/facebook/react/pull/22308">#22308</a> by <a href="https://github.com/lunaruan">@lunaruan</a>)</li>
+<li>Improve memory usage. (<a href="https://github.com/facebook/react/pull/21039">#21039</a> by <a href="https://github.com/bgirard">@bgirard</a>)</li>
+<li>Improve messages if string coercion throws (Temporal.*, Symbol, etc.) (<a href="https://github.com/facebook/react/pull/22064">#22064</a> by <a href="https://github.com/justingrant">@justingrant</a>)</li>
+<li>Use <code>setImmediate</code> when available over <code>MessageChannel</code>. (<a href="https://github.com/facebook/react/pull/20834">#20834</a> by <a href="https://github.com/gaearon">@gaearon</a>)</li>
+<li>Fix context failing to propagate inside suspended trees. (<a href="https://github.com/facebook/react/pull/23095">#23095</a> by <a href="https://github.com/gaearon">@gaearon</a>)</li>
+<li>Fix <code>useReducer</code> observing incorrect props by removing the eager bailout mechanism. (<a href="https://github.com/facebook/react/pull/22445">#22445</a> by <a href="https://github.com/josephsavona">@josephsavona</a>)</li>
+<li>Fix <code>setState</code> being ignored in Safari when appending iframes. (<a href="https://github.com/facebook/react/pull/23111">#23111</a> by <a href="https://github.com/gaearon">@gaearon</a>)</li>
+<li>Fix a crash when rendering <code>ZonedDateTime</code> in the tree. (<a href="https://github.com/facebook/react/pull/20617">#20617</a> by <a href="https://github.com/dimaqq">@dimaqq</a>)</li>
+<li>Fix a crash when document is set to <code>null</code> in tests. (<a href="https://github.com/facebook/react/pull/22695">#22695</a> by <a href="https://github.com/SimenB">@SimenB</a>)</li>
+<li>Fix <code>onLoad</code> not triggering when concurrent features are on. (<a href="https://github.com/facebook/react/pull/23316">#23316</a> by <a href="https://github.com/gnoff">@gnoff</a>)</li>
+<li>Fix a warning when a selector returns <code>NaN</code>.  (<a href="https://github.com/facebook/react/pull/23333">#23333</a> by <a href="https://github.com/hachibeeDI">@hachibeeDI</a>)</li>
+<li>Fix the generated license header. (<a href="https://github.com/facebook/react/pull/23004">#23004</a> by <a href="https://github.com/vitaliemiron">@vitaliemiron</a>)</li>
+<li>Add <code>package.json</code> as one of the entry points. (<a href="https://github.com/facebook/react/pull/22954">#22954</a> by <a href="https://github.com/Jack-Works">@Jack</a>)</li>
+<li>Allow suspending outside a Suspense boundary. (<a href="https://github.com/facebook/react/pull/23267">#23267</a> by <a href="https://github.com/acdlite">@acdlite</a>)</li>
+<li>Log a recoverable error whenever hydration fails. (<a href="https://github.com/facebook/react/pull/23319">#23319</a> by <a href="https://github.com/acdlite">@acdlite</a>)</li>
+</ul>
+<h3>React DOM</h3>
+<ul>
+<li>Add <code>createRoot</code> and <code>hydrateRoot</code>. (<a href="https://github.com/facebook/react/pull/10239">#10239</a>, <a href="https://github.com/facebook/react/pull/11225">#11225</a>, <a href="https://github.com/facebook/react/pull/12117">#12117</a>, <a href="https://github.com/facebook/react/pull/13732">#13732</a>, <a href="https://github.com/facebook/react/pull/15502">#15502</a>, <a href="https://github.com/facebook/react/pull/15532">#15532</a>, <a href="https://github.com/facebook/react/pull/17035">#17035</a>, <a href="https://github.com/facebook/react/pull/17165">#17165</a>, <a href="https://github.com/facebook/react/pull/20669">#20669</a>, <a href="https://github.com/facebook/react/pull/20748">#20748</a>, <a href="https://github.com/facebook/react/pull/20888">#20888</a>, <a href="https://github.com/facebook/react/pull/21072">#21072</a>, <a href="https://github.com/facebook/react/pull/21417">#21417</a>, <a href="https://github.com/facebook/react/pull/21652">#21652</a>, <a href="https://github.com/facebook/react/pull/21687">#21687</a>, <a href="https://github.com/facebook/react/pull/23207">#23207</a>, <a href="https://github.com/facebook/react/pull/23385">#23385</a> by <a href="https://github.com/acdlite">@acdlite</a>, <a href="https://github.com/bvaughn">@bvaughn</a>, <a href="https://github.com/gaearon">@gaearon</a>, <a href="https://github.com/lunaruan">@lunaruan</a>, <a href="https://github.com/rickhanlonii">@rickhanlonii</a>, <a href="https://github.com/trueadm">@trueadm</a>, and <a href="https://github.com/sebmarkbage">@sebmarkbage</a>)</li>
+<li>Add selective hydration. (<a href="https://github.com/facebook/react/pull/14717">#14717</a>, <a href="https://github.com/facebook/react/pull/14884">#14884</a>, <a href="https://github.com/facebook/react/pull/16725">#16725</a>, <a href="https://github.com/facebook/react/pull/16880">#16880</a>, <a href="https://github.com/facebook/react/pull/17004">#17004</a>, <a href="https://github.com/facebook/react/pull/22416">#22416</a>, <a href="https://github.com/facebook/react/pull/22629">#22629</a>, <a href="https://github.com/facebook/react/pull/22448">#22448</a>, <a href="https://github.com/facebook/react/pull/22856">#22856</a>, <a href="https://github.com/facebook/react/pull/23176">#23176</a> by <a href="https://github.com/acdlite">@acdlite</a>, <a href="https://github.com/gaearon">@gaearon</a>, <a href="https://github.com/salazarm">@salazarm</a>, and <a href="https://github.com/sebmarkbage">@sebmarkbage</a>)</li>
+<li>Add <code>aria-description</code> to the list of known ARIA attributes. (<a href="https://github.com/facebook/react/pull/22142">#22142</a> by <a href="https://github.com/mahyareb">@mahyareb</a>)</li>
+<li>Add <code>onResize</code> event to video elements. (<a href="https://github.com/facebook/react/pull/21973">#21973</a> by <a href="https://github.com/rileyjshaw">@rileyjshaw</a>)</li>
+<li>Add <code>imageSizes</code> and <code>imageSrcSet</code> to known props. (<a href="https://github.com/facebook/react/pull/22550">#22550</a> by <a href="https://github.com/eps1lon">@eps1lon</a>)</li>
+<li>Allow non-string <code>&lt;option&gt;</code> children if <code>value</code> is provided.  (<a href="https://github.com/facebook/react/pull/21431">#21431</a> by <a href="https://github.com/sebmarkbage">@sebmarkbage</a>)</li>
+<li>Fix <code>aspectRatio</code> style not being applied. (<a href="https://github.com/facebook/react/pull/21100">#21100</a> by <a href="https://github.com/gaearon">@gaearon</a>)</li>
+<li>Warn if <code>renderSubtreeIntoContainer</code> is called. (<a href="https://github.com/facebook/react/pull/23355">#23355</a> by <a href="https://github.com/acdlite">@acdlite</a>)</li>
+</ul>
+<h3>React DOM Server</h3>
+<ul>
+<li>Add the new streaming renderer. (<a href="https://github.com/facebook/react/pull/14144">#14144</a>, <a href="https://github.com/facebook/react/pull/20970">#20970</a>, <a href="https://github.com/facebook/react/pull/21056">#21056</a>, <a href="https://github.com/facebook/react/pull/21255">#21255</a>, <a href="https://github.com/facebook/react/pull/21200">#21200</a>, <a href="https://github.com/facebook/react/pull/21257">#21257</a>, <a href="https://github.com/facebook/react/pull/21276">#21276</a>, <a href="https://github.com/facebook/react/pull/22443">#22443</a>, <a href="https://github.com/facebook/react/pull/22450">#22450</a>, <a href="https://github.com/facebook/react/pull/23247">#23247</a>, <a href="https://github.com/facebook/react/pull/24025">#24025</a>, <a href="https://github.com/facebook/react/pull/24030">#24030</a> by <a href="https://github.com/sebmarkbage">@sebmarkbage</a>)</li>
+<li>Fix context providers in SSR when handling multiple requests. (<a href="https://github.com/facebook/react/pull/23171">#23171</a> by <a href="https://github.com/frandiox">@frandiox</a>)</li>
+<li>Revert to client render on text mismatch. (<a href="https://github.com/facebook/react/pull/23354">#23354</a> by <a href="https://github.com/acdlite">@acdlite</a>)</li>
+<li>Deprecate <code>renderToNodeStream</code>. (<a href="https://github.com/facebook/react/pull/23359">#23359</a> by <a href="https://github.com/sebmarkbage">@sebmarkbage</a>)</li>
+<li>Fix a spurious error log in the new server renderer. (<a href="https://github.com/facebook/react/pull/24043">#24043</a> by <a href="https://github.com/eps1lon">@eps1lon</a>)</li>
+<li>Fix a bug in the new server renderer. (<a href="https://github.com/facebook/react/pull/22617">#22617</a> by <a href="https://github.com/shuding">@shuding</a>)</li>
+<li>Ignore function and symbol values inside custom elements on the server. (<a href="https://github.com/facebook/react/pull/21157">#21157</a> by <a href="https://github.com/sebmarkbage">@sebmarkbage</a>)</li>
+</ul>
+<h3>React DOM Test Utils</h3>
+<ul>
+<li>Throw when <code>act</code> is used in production. (<a href="https://github.com/facebook/react/pull/21686">#21686</a> by <a href="https://github.com/acdlite">@acdlite</a>)</li>
+<li>Support disabling spurious act warnings with <code>global.IS_REACT_ACT_ENVIRONMENT</code>. (<a href="https://github.com/facebook/react/pull/22561">#22561</a> by <a href="https://github.com/acdlite">@acdlite</a>)</li>
+<li>Expand act warning to cover all APIs that might schedule React work. (<a href="https://github.com/facebook/react/pull/22607">#22607</a> by <a href="https://github.com/acdlite">@acdlite</a>)</li>
+<li>Make <code>act</code> batch updates. (<a href="https://github.com/facebook/react/pull/21797">#21797</a> by <a href="https://github.com/acdlite">@acdlite</a>)</li>
+<li>Remove warning for dangling passive effects. (<a href="https://github.com/facebook/react/pull/22609">#22609</a> by <a href="https://github.com/acdlite">@acdlite</a>)</li>
+</ul>
+<h3>React Refresh</h3>
+<ul>
+<li>Track late-mounted roots in Fast Refresh. (<a href="https://github.com/facebook/react/pull/22740">#22740</a> by <a href="https://github.com/anc95">@anc95</a>)</li>
+<li>Add <code>exports</code> field to <code>package.json</code>. (<a href="https://github.com/facebook/react/pull/23087">#23087</a> by <a href="https://github.com/otakustay">@otakustay</a>)</li>
+</ul>
+<h3>Server Components (Experimental)</h3>
+<ul>
+<li>Add Server Context support. (<a href="https://github.com/facebook/react/pull/23244">#23244</a> by <a href="https://github.com/salazarm">@salazarm</a>)</li>
+<li>Add <code>lazy</code> support. (<a href="https://github.com/facebook/react/pull/24068">#24068</a> by <a href="https://github.com/gnoff">@gnoff</a>)</li>
+<li>Update webpack plugin for webpack 5 (<a href="https://github.com/facebook/react/pull/22739">#22739</a> by <a href="https://github.com/michenly">@michenly</a>)</li>
+<li>Fix a mistake in the Node loader. (<a href="https://github.com/facebook/react/pull/22537">#22537</a> by <a href="https://github.com/btea">@btea</a>)</li>
+<li>Use <code>globalThis</code> instead of <code>window</code> for edge environments. (<a href="https://github.com/facebook/react/pull/22777">#22777</a> by <a href="https://github.com/huozhi">@huozhi</a>)</li>
+</ul>
+<h3>Scheduler (Experimental)</h3>
+<ul>
+<li>Remove unstable <code>scheduler/tracing</code> API (<a href="https://github.com/facebook/react/pull/20037">#20037</a> by <a href="https://github.com/bvaughn">@bvaughn</a>)</li>
+</ul>
+
+                </div>
+                <div class="card-footer">
+                    <div class="d-flex align-items-center justify-content-between">
+                        <div class="d-flex align-items-center">
+                            <span class="d-flex me-2">
+                                <span class="bg-primary text-white p-2 rounded-start d-flex align-items-center">Created</span>
+                                <span class="bg-white border border-primary p-2 rounded-end">
+                                    <time datetime="2022-03-29" itemprop="dateCreated">2022-03-29</time>
+                                </span>
+                            </span>
+                            <span class="d-flex me-2">
+                                <span class="bg-success text-white p-2 rounded-start d-flex align-items-center">Published</span>
+                                <span class="bg-white border border-success p-2 rounded-end">
+                                    <time datetime="2022-03-29" itemprop="datePublished">2022-03-29</time>
+                                </span>
+                            </span>
+                            <span class="d-flex me-2">
+                                <span class="bg-warning p-2 rounded-start d-flex align-items-center">Prerelease</span>
+                                <span class="bg-white p-2 border border-warning rounded-end d-flex align-items-center">
+                                    <img src="/assets/images/false.svg?v=2" width="16" height="16" alt="">
+                                </span>
+                            </span>
+                            <span class="d-flex me-2">
+                                <span class="bg-info p-2 rounded-start d-flex align-items-center">Draft</span>
+                                <span class="bg-white p-2 border border-info rounded-end d-flex align-items-center">
+                                    <img src="/assets/images/false.svg?v=2" width="16" height="16" alt="">
+                                </span>
+                            </span>
+                        </div>
+                        <div>
+                            <a href="https://github.com/facebook/react/releases/tag/v18.0.0" target="_BLANK" title="React v18 v18.0.0 release on GitHub"><img src="/assets/images/github.png" width="25" height="25" alt=""></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        
+    </section>
+
+
+        </div>
+    </main>
+    <footer class="container-fluid mt-3">
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <a class="lh-lg" href="https://www.flaticon.com/free-icons/release" title="release icons">Release icons created by SBTS2018 - Flaticon</a>
+                </div>
+                <div class="col text-end">
+                    <span class="lh-lg">Open Source on <a href="https://github.com/levidurfee/rlsz_dev" target="_BLANK">GitHub</a>.</span>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

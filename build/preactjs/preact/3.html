@@ -1,0 +1,515 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Preact 3 - Releases</title>
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-CNZF5R22P8"></script>
+    <script nonce="EDNnf03nceIOfn39fn3e9h3sdfa">
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-CNZF5R22P8');
+    </script>
+
+    <link href="/assets/css/app.css?ts=5ff0f5694c6e5" rel="stylesheet">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+
+    <meta name="description" content='Preact 3 - ⚛️ Fast 3kB React alternative with the same modern API. Components & Virtual DOM. - Releases'>
+
+    
+    
+    <link rel="canonical" href="https://rlsz.dev/preactjs/preact/">
+    
+
+</head>
+<body>
+    <header class="container-fluid bg-primary">
+        <nav class="navbar navbar-dark">
+            <div class="container">
+                <a class="navbar-brand" href="/">
+                    <img src="/android-chrome-512x512.png" alt="" width="24" height="24" class="d-inline-block align-text-top">
+                    Releases
+                </a>
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a href="mailto:requests@rlsz.dev" class="nav-link text-white">requests@rlsz.dev</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main class="container mt-3">
+        <div class="row">
+            
+
+    <section class="col" itemscope itemtype="https://schema.org/SoftwareSourceCode">
+        <h1 itemprop="name">Preact 3</h1>
+        <p>
+            <a href="https://github.com/preactjs/preact" itemprop="codeRepository" itemscope itemtype="https://schema.org/URL" target="_BLANK">https://github.com/preactjs/preact</a>
+        </p>
+
+        
+            <div class="card mb-3 shadow overflow-hidden" data-id="MDc6UmVsZWFzZTI2MzI0MTA=">
+                <div class="card-header bg-white">
+                    <div class="d-flex justify-content-between align-items-center">
+                        <div class="d-flex align-items-center">
+                            <h2 class="card-title" itemprop="version"><a id="3.4.0">3.4.0</a></h2>
+                        </div>
+                        <div>
+                            <a href="#3.4.0">#</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-body">
+                    <ul>
+<li>Fix for <code>key</code>  behaviour, and don't write keys to the DOM as attributes.</li>
+</ul>
+
+                </div>
+                <div class="card-footer">
+                    <div class="d-flex align-items-center justify-content-between">
+                        <div class="d-flex align-items-center">
+                            <span class="d-flex me-2">
+                                <span class="bg-primary text-white p-2 rounded-start d-flex align-items-center">Created</span>
+                                <span class="bg-white border border-primary p-2 rounded-end">
+                                    <time datetime="2016-02-14" itemprop="dateCreated">2016-02-14</time>
+                                </span>
+                            </span>
+                            <span class="d-flex me-2">
+                                <span class="bg-success text-white p-2 rounded-start d-flex align-items-center">Published</span>
+                                <span class="bg-white border border-success p-2 rounded-end">
+                                    <time datetime="2016-02-17" itemprop="datePublished">2016-02-17</time>
+                                </span>
+                            </span>
+                            <span class="d-flex me-2">
+                                <span class="bg-warning p-2 rounded-start d-flex align-items-center">Prerelease</span>
+                                <span class="bg-white p-2 border border-warning rounded-end d-flex align-items-center">
+                                    <img src="/assets/images/false.svg?v=2" width="16" height="16" alt="">
+                                </span>
+                            </span>
+                            <span class="d-flex me-2">
+                                <span class="bg-info p-2 rounded-start d-flex align-items-center">Draft</span>
+                                <span class="bg-white p-2 border border-info rounded-end d-flex align-items-center">
+                                    <img src="/assets/images/false.svg?v=2" width="16" height="16" alt="">
+                                </span>
+                            </span>
+                        </div>
+                        <div>
+                            <a href="https://github.com/preactjs/preact/releases/tag/3.4.0" target="_BLANK" title="Preact 3 3.4.0 release on GitHub"><img src="/assets/images/github.png" width="25" height="25" alt=""></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        
+            <div class="card mb-3 shadow overflow-hidden" data-id="MDc6UmVsZWFzZTI2MDY1NjA=">
+                <div class="card-header bg-white">
+                    <div class="d-flex justify-content-between align-items-center">
+                        <div class="d-flex align-items-center">
+                            <h2 class="card-title" itemprop="version"><a id="3.3.0">3.3.0</a></h2>
+                        </div>
+                        <div>
+                            <a href="#3.3.0">#</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-body">
+                    <ul>
+<li>Performance tuning for a ~10% improvement on DBMonster (basically <strong>10% faster diff algorithm</strong>)</li>
+<li>Refactored diff algorithm to be easier to follow</li>
+<li>Add <code>Component.prototype.forceUpdate()</code> method.</li>
+<li>Fix a bug where a child component of a high-order component self-rendering (eg: via <code>setState()</code>) would cause a subsequent re-render of the parent component to re-initialize itself and the child (through the recycler, but this was causing thrash).</li>
+<li>Fix an issue where nested components would not receive unmount lifecycle hooks (fixes Issue #47)</li>
+</ul>
+
+                </div>
+                <div class="card-footer">
+                    <div class="d-flex align-items-center justify-content-between">
+                        <div class="d-flex align-items-center">
+                            <span class="d-flex me-2">
+                                <span class="bg-primary text-white p-2 rounded-start d-flex align-items-center">Created</span>
+                                <span class="bg-white border border-primary p-2 rounded-end">
+                                    <time datetime="2016-02-12" itemprop="dateCreated">2016-02-12</time>
+                                </span>
+                            </span>
+                            <span class="d-flex me-2">
+                                <span class="bg-success text-white p-2 rounded-start d-flex align-items-center">Published</span>
+                                <span class="bg-white border border-success p-2 rounded-end">
+                                    <time datetime="2016-02-12" itemprop="datePublished">2016-02-12</time>
+                                </span>
+                            </span>
+                            <span class="d-flex me-2">
+                                <span class="bg-warning p-2 rounded-start d-flex align-items-center">Prerelease</span>
+                                <span class="bg-white p-2 border border-warning rounded-end d-flex align-items-center">
+                                    <img src="/assets/images/false.svg?v=2" width="16" height="16" alt="">
+                                </span>
+                            </span>
+                            <span class="d-flex me-2">
+                                <span class="bg-info p-2 rounded-start d-flex align-items-center">Draft</span>
+                                <span class="bg-white p-2 border border-info rounded-end d-flex align-items-center">
+                                    <img src="/assets/images/false.svg?v=2" width="16" height="16" alt="">
+                                </span>
+                            </span>
+                        </div>
+                        <div>
+                            <a href="https://github.com/preactjs/preact/releases/tag/3.3.0" target="_BLANK" title="Preact 3 3.3.0 release on GitHub"><img src="/assets/images/github.png" width="25" height="25" alt=""></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        
+            <div class="card mb-3 shadow overflow-hidden" data-id="MDc6UmVsZWFzZTI2MDY1NDY=">
+                <div class="card-header bg-white">
+                    <div class="d-flex justify-content-between align-items-center">
+                        <div class="d-flex align-items-center">
+                            <h2 class="card-title" itemprop="version"><a id="3.2.0">3.2.0</a></h2>
+                        </div>
+                        <div>
+                            <a href="#3.2.0">#</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-body">
+                    <ul>
+<li>Bugfix: pass <code>context</code> through recycled constructors (with this <code>react-redux</code> is now fully supported!)</li>
+<li><code>linkState()</code> when used with top-level keys (ie, not dot-notated) will no longer mutate <code>this.state</code> in-place.
+<blockquote>
+<p><em>(Nested keys can and will still mutate this.state, since the implementation of immutable state traversal would essentially be a small immutability library, not something Preact core can justify)</em></p>
+</blockquote>
+</li>
+</ul>
+
+                </div>
+                <div class="card-footer">
+                    <div class="d-flex align-items-center justify-content-between">
+                        <div class="d-flex align-items-center">
+                            <span class="d-flex me-2">
+                                <span class="bg-primary text-white p-2 rounded-start d-flex align-items-center">Created</span>
+                                <span class="bg-white border border-primary p-2 rounded-end">
+                                    <time datetime="2016-02-07" itemprop="dateCreated">2016-02-07</time>
+                                </span>
+                            </span>
+                            <span class="d-flex me-2">
+                                <span class="bg-success text-white p-2 rounded-start d-flex align-items-center">Published</span>
+                                <span class="bg-white border border-success p-2 rounded-end">
+                                    <time datetime="2016-02-12" itemprop="datePublished">2016-02-12</time>
+                                </span>
+                            </span>
+                            <span class="d-flex me-2">
+                                <span class="bg-warning p-2 rounded-start d-flex align-items-center">Prerelease</span>
+                                <span class="bg-white p-2 border border-warning rounded-end d-flex align-items-center">
+                                    <img src="/assets/images/false.svg?v=2" width="16" height="16" alt="">
+                                </span>
+                            </span>
+                            <span class="d-flex me-2">
+                                <span class="bg-info p-2 rounded-start d-flex align-items-center">Draft</span>
+                                <span class="bg-white p-2 border border-info rounded-end d-flex align-items-center">
+                                    <img src="/assets/images/false.svg?v=2" width="16" height="16" alt="">
+                                </span>
+                            </span>
+                        </div>
+                        <div>
+                            <a href="https://github.com/preactjs/preact/releases/tag/3.2.0" target="_BLANK" title="Preact 3 3.2.0 release on GitHub"><img src="/assets/images/github.png" width="25" height="25" alt=""></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        
+            <div class="card mb-3 shadow overflow-hidden" data-id="MDc6UmVsZWFzZTI2MDY1NDg=">
+                <div class="card-header bg-white">
+                    <div class="d-flex justify-content-between align-items-center">
+                        <div class="d-flex align-items-center">
+                            <h2 class="card-title" itemprop="version"><a id="3.1.0">3.1.0</a></h2>
+                        </div>
+                        <div>
+                            <a href="#3.1.0">#</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-body">
+                    <ul>
+<li>Performance tweaks!</li>
+</ul>
+
+                </div>
+                <div class="card-footer">
+                    <div class="d-flex align-items-center justify-content-between">
+                        <div class="d-flex align-items-center">
+                            <span class="d-flex me-2">
+                                <span class="bg-primary text-white p-2 rounded-start d-flex align-items-center">Created</span>
+                                <span class="bg-white border border-primary p-2 rounded-end">
+                                    <time datetime="2016-02-06" itemprop="dateCreated">2016-02-06</time>
+                                </span>
+                            </span>
+                            <span class="d-flex me-2">
+                                <span class="bg-success text-white p-2 rounded-start d-flex align-items-center">Published</span>
+                                <span class="bg-white border border-success p-2 rounded-end">
+                                    <time datetime="2016-02-12" itemprop="datePublished">2016-02-12</time>
+                                </span>
+                            </span>
+                            <span class="d-flex me-2">
+                                <span class="bg-warning p-2 rounded-start d-flex align-items-center">Prerelease</span>
+                                <span class="bg-white p-2 border border-warning rounded-end d-flex align-items-center">
+                                    <img src="/assets/images/false.svg?v=2" width="16" height="16" alt="">
+                                </span>
+                            </span>
+                            <span class="d-flex me-2">
+                                <span class="bg-info p-2 rounded-start d-flex align-items-center">Draft</span>
+                                <span class="bg-white p-2 border border-info rounded-end d-flex align-items-center">
+                                    <img src="/assets/images/false.svg?v=2" width="16" height="16" alt="">
+                                </span>
+                            </span>
+                        </div>
+                        <div>
+                            <a href="https://github.com/preactjs/preact/releases/tag/3.1.0" target="_BLANK" title="Preact 3 3.1.0 release on GitHub"><img src="/assets/images/github.png" width="25" height="25" alt=""></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        
+            <div class="card mb-3 shadow overflow-hidden" data-id="MDc6UmVsZWFzZTI1NDk4MDg=">
+                <div class="card-header bg-white">
+                    <div class="d-flex justify-content-between align-items-center">
+                        <div class="d-flex align-items-center">
+                            <h2 class="card-title" itemprop="version"><a id="3.0.1">3.0.1</a></h2>
+                        </div>
+                        <div>
+                            <a href="#3.0.1">#</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-body">
+                    <p>This is likely the last beta release of Preact 3.0, it'll become the stable branch shortly.<br />
+Feedback and testing welcome!</p>
+<ul>
+<li>Use a safeguard method to obtain preact attr cache objects before writes</li>
+<li>Fix edge case where fallthrough attribute values would not be stored in the preact attr cache</li>
+<li><code>null</code> instead of <code>delete</code> for <code>_component</code> refs, avoiding shape mutations</li>
+<li>build tweaks</li>
+</ul>
+
+                </div>
+                <div class="card-footer">
+                    <div class="d-flex align-items-center justify-content-between">
+                        <div class="d-flex align-items-center">
+                            <span class="d-flex me-2">
+                                <span class="bg-primary text-white p-2 rounded-start d-flex align-items-center">Created</span>
+                                <span class="bg-white border border-primary p-2 rounded-end">
+                                    <time datetime="2016-02-04" itemprop="dateCreated">2016-02-04</time>
+                                </span>
+                            </span>
+                            <span class="d-flex me-2">
+                                <span class="bg-success text-white p-2 rounded-start d-flex align-items-center">Published</span>
+                                <span class="bg-white border border-success p-2 rounded-end">
+                                    <time datetime="2016-02-04" itemprop="datePublished">2016-02-04</time>
+                                </span>
+                            </span>
+                            <span class="d-flex me-2">
+                                <span class="bg-warning p-2 rounded-start d-flex align-items-center">Prerelease</span>
+                                <span class="bg-white p-2 border border-warning rounded-end d-flex align-items-center">
+                                    <img src="/assets/images/true.svg?v=2" width="16" height="16" alt="">
+                                </span>
+                            </span>
+                            <span class="d-flex me-2">
+                                <span class="bg-info p-2 rounded-start d-flex align-items-center">Draft</span>
+                                <span class="bg-white p-2 border border-info rounded-end d-flex align-items-center">
+                                    <img src="/assets/images/false.svg?v=2" width="16" height="16" alt="">
+                                </span>
+                            </span>
+                        </div>
+                        <div>
+                            <a href="https://github.com/preactjs/preact/releases/tag/3.0.1" target="_BLANK" title="Preact 3 3.0.1 release on GitHub"><img src="/assets/images/github.png" width="25" height="25" alt=""></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        
+            <div class="card mb-3 shadow overflow-hidden" data-id="MDc6UmVsZWFzZTI1NDIyNTA=">
+                <div class="card-header bg-white">
+                    <div class="d-flex justify-content-between align-items-center">
+                        <div class="d-flex align-items-center">
+                            <h2 class="card-title" itemprop="version"><a id="3.0.0-beta4">3.0.0-beta4</a></h2>
+                        </div>
+                        <div>
+                            <a href="#3.0.0-beta4">#</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-body">
+                    <ul>
+<li>Preact's codebase has been factored into modules</li>
+<li>Reduced possible repaints by collecting property cache into a namespace</li>
+<li>10-20% performance improvement under heavy rendering load!</li>
+<li>Now available in npm under a nice <code>dist-tag</code>: <code>npm install preact@beta</code></li>
+</ul>
+
+                </div>
+                <div class="card-footer">
+                    <div class="d-flex align-items-center justify-content-between">
+                        <div class="d-flex align-items-center">
+                            <span class="d-flex me-2">
+                                <span class="bg-primary text-white p-2 rounded-start d-flex align-items-center">Created</span>
+                                <span class="bg-white border border-primary p-2 rounded-end">
+                                    <time datetime="2016-02-03" itemprop="dateCreated">2016-02-03</time>
+                                </span>
+                            </span>
+                            <span class="d-flex me-2">
+                                <span class="bg-success text-white p-2 rounded-start d-flex align-items-center">Published</span>
+                                <span class="bg-white border border-success p-2 rounded-end">
+                                    <time datetime="2016-02-03" itemprop="datePublished">2016-02-03</time>
+                                </span>
+                            </span>
+                            <span class="d-flex me-2">
+                                <span class="bg-warning p-2 rounded-start d-flex align-items-center">Prerelease</span>
+                                <span class="bg-white p-2 border border-warning rounded-end d-flex align-items-center">
+                                    <img src="/assets/images/true.svg?v=2" width="16" height="16" alt="">
+                                </span>
+                            </span>
+                            <span class="d-flex me-2">
+                                <span class="bg-info p-2 rounded-start d-flex align-items-center">Draft</span>
+                                <span class="bg-white p-2 border border-info rounded-end d-flex align-items-center">
+                                    <img src="/assets/images/false.svg?v=2" width="16" height="16" alt="">
+                                </span>
+                            </span>
+                        </div>
+                        <div>
+                            <a href="https://github.com/preactjs/preact/releases/tag/3.0.0-beta4" target="_BLANK" title="Preact 3 3.0.0-beta4 release on GitHub"><img src="/assets/images/github.png" width="25" height="25" alt=""></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        
+            <div class="card mb-3 shadow overflow-hidden" data-id="MDc6UmVsZWFzZTI1NDA3MTI=">
+                <div class="card-header bg-white">
+                    <div class="d-flex justify-content-between align-items-center">
+                        <div class="d-flex align-items-center">
+                            <h2 class="card-title" itemprop="version"><a id="3.0.0-beta3">3.0.0-beta3</a></h2>
+                        </div>
+                        <div>
+                            <a href="#3.0.0-beta3">#</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-body">
+                    <ul>
+<li>Fixes for event removal (#34), tests.</li>
+</ul>
+
+                </div>
+                <div class="card-footer">
+                    <div class="d-flex align-items-center justify-content-between">
+                        <div class="d-flex align-items-center">
+                            <span class="d-flex me-2">
+                                <span class="bg-primary text-white p-2 rounded-start d-flex align-items-center">Created</span>
+                                <span class="bg-white border border-primary p-2 rounded-end">
+                                    <time datetime="2016-02-02" itemprop="dateCreated">2016-02-02</time>
+                                </span>
+                            </span>
+                            <span class="d-flex me-2">
+                                <span class="bg-success text-white p-2 rounded-start d-flex align-items-center">Published</span>
+                                <span class="bg-white border border-success p-2 rounded-end">
+                                    <time datetime="2016-02-02" itemprop="datePublished">2016-02-02</time>
+                                </span>
+                            </span>
+                            <span class="d-flex me-2">
+                                <span class="bg-warning p-2 rounded-start d-flex align-items-center">Prerelease</span>
+                                <span class="bg-white p-2 border border-warning rounded-end d-flex align-items-center">
+                                    <img src="/assets/images/true.svg?v=2" width="16" height="16" alt="">
+                                </span>
+                            </span>
+                            <span class="d-flex me-2">
+                                <span class="bg-info p-2 rounded-start d-flex align-items-center">Draft</span>
+                                <span class="bg-white p-2 border border-info rounded-end d-flex align-items-center">
+                                    <img src="/assets/images/false.svg?v=2" width="16" height="16" alt="">
+                                </span>
+                            </span>
+                        </div>
+                        <div>
+                            <a href="https://github.com/preactjs/preact/releases/tag/3.0.0-beta3" target="_BLANK" title="Preact 3 3.0.0-beta3 release on GitHub"><img src="/assets/images/github.png" width="25" height="25" alt=""></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        
+            <div class="card mb-3 shadow overflow-hidden" data-id="MDc6UmVsZWFzZTI1MjkzNDc=">
+                <div class="card-header bg-white">
+                    <div class="d-flex justify-content-between align-items-center">
+                        <div class="d-flex align-items-center">
+                            <h2 class="card-title" itemprop="version"><a id="3.0.0-beta2">3.0.0-beta2</a></h2>
+                        </div>
+                        <div>
+                            <a href="#3.0.0-beta2">#</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-body">
+                    <p>Beta version of the 3.0.0 major bump:</p>
+<h1>3.0.0</h1>
+<ul>
+<li>Added <code>context</code> support</li>
+<li>Bugfix: <code>componentDidUpdate()</code> should not be called after initial render</li>
+<li>Switch from tracking <code>nextState</code> to tracking <code>prevState</code></li>
+<li>Drop <code>VNode#__isVNode</code> in favor of <code>instanceof</code> (<a href="http://esbench.com/bench/55fc4b7b432cbc1100837beb">reason</a>)</li>
+</ul>
+
+                </div>
+                <div class="card-footer">
+                    <div class="d-flex align-items-center justify-content-between">
+                        <div class="d-flex align-items-center">
+                            <span class="d-flex me-2">
+                                <span class="bg-primary text-white p-2 rounded-start d-flex align-items-center">Created</span>
+                                <span class="bg-white border border-primary p-2 rounded-end">
+                                    <time datetime="2016-02-01" itemprop="dateCreated">2016-02-01</time>
+                                </span>
+                            </span>
+                            <span class="d-flex me-2">
+                                <span class="bg-success text-white p-2 rounded-start d-flex align-items-center">Published</span>
+                                <span class="bg-white border border-success p-2 rounded-end">
+                                    <time datetime="2016-02-01" itemprop="datePublished">2016-02-01</time>
+                                </span>
+                            </span>
+                            <span class="d-flex me-2">
+                                <span class="bg-warning p-2 rounded-start d-flex align-items-center">Prerelease</span>
+                                <span class="bg-white p-2 border border-warning rounded-end d-flex align-items-center">
+                                    <img src="/assets/images/true.svg?v=2" width="16" height="16" alt="">
+                                </span>
+                            </span>
+                            <span class="d-flex me-2">
+                                <span class="bg-info p-2 rounded-start d-flex align-items-center">Draft</span>
+                                <span class="bg-white p-2 border border-info rounded-end d-flex align-items-center">
+                                    <img src="/assets/images/false.svg?v=2" width="16" height="16" alt="">
+                                </span>
+                            </span>
+                        </div>
+                        <div>
+                            <a href="https://github.com/preactjs/preact/releases/tag/3.0.0-beta2" target="_BLANK" title="Preact 3 3.0.0-beta2 release on GitHub"><img src="/assets/images/github.png" width="25" height="25" alt=""></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        
+    </section>
+
+
+        </div>
+    </main>
+    <footer class="container-fluid mt-3">
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <a class="lh-lg" href="https://www.flaticon.com/free-icons/release" title="release icons">Release icons created by SBTS2018 - Flaticon</a>
+                </div>
+                <div class="col text-end">
+                    <span class="lh-lg">Open Source on <a href="https://github.com/levidurfee/rlsz_dev" target="_BLANK">GitHub</a>.</span>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,1579 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Laravel v5 - Releases</title>
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-CNZF5R22P8"></script>
+    <script nonce="EDNnf03nceIOfn39fn3e9h3sdfa">
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-CNZF5R22P8');
+    </script>
+
+    <link href="/assets/css/app.css?ts=5ff0f5694c6e5" rel="stylesheet">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+
+    <meta name="description" content='Laravel v5 - Laravel is a web application framework with expressive, elegant syntax. We’ve already laid the foundation for your next big idea — freeing you to create without sweating the small things. - Releases'>
+
+    
+    
+    <link rel="canonical" href="https://rlsz.dev/laravel/laravel/">
+    
+
+</head>
+<body>
+    <header class="container-fluid bg-primary">
+        <nav class="navbar navbar-dark">
+            <div class="container">
+                <a class="navbar-brand" href="/">
+                    <img src="/android-chrome-512x512.png" alt="" width="24" height="24" class="d-inline-block align-text-top">
+                    Releases
+                </a>
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a href="mailto:requests@rlsz.dev" class="nav-link text-white">requests@rlsz.dev</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main class="container mt-3">
+        <div class="row">
+            
+
+    <section class="col" itemscope itemtype="https://schema.org/SoftwareSourceCode">
+        <h1 itemprop="name">Laravel v5</h1>
+        <p>
+            <a href="https://github.com/laravel/laravel" itemprop="codeRepository" itemscope itemtype="https://schema.org/URL" target="_BLANK">https://github.com/laravel/laravel</a>
+        </p>
+
+        
+            <div class="card mb-3 shadow overflow-hidden" data-id="MDc6UmVsZWFzZTE5ODU2OTEx">
+                <div class="card-header bg-white">
+                    <div class="d-flex justify-content-between align-items-center">
+                        <div class="d-flex align-items-center">
+                            <h2 class="card-title" itemprop="version"><a id="v5.8.35">v5.8.35</a></h2>
+                        </div>
+                        <div>
+                            <a href="#v5.8.35">#</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-body">
+                    <h3>Added</h3>
+<ul>
+<li>Add DYNAMODB_ENDPOINT to the cache config (<a href="https://github.com/laravel/laravel/pull/5034">#5034</a>)</li>
+<li>Added support for new redis URL property (<a href="https://github.com/laravel/laravel/pull/5037">#5037</a>)</li>
+<li>Add .env.backup to gitignore (<a href="https://github.com/laravel/laravel/pull/5046">#5046</a>)</li>
+<li>Using environment variable to set redis prefix (<a href="https://github.com/laravel/laravel/pull/5062">#5062</a>)</li>
+</ul>
+<h3>Changed</h3>
+<ul>
+<li>Update axios package (<a href="https://github.com/laravel/laravel/pull/5038">#5038</a>)</li>
+<li>Use generic default db config (<a href="https://github.com/laravel/laravel/commit/6f3d68f67f3dab0e0d853719696ede8dfd9cc4e1">6f3d68f</a>)</li>
+<li>Update deprecated pusher option (<a href="https://github.com/laravel/laravel/pull/5058">#5058</a>)</li>
+<li>Move TrustProxies to highest priority (<a href="https://github.com/laravel/laravel/pull/5055">#5055</a>)</li>
+</ul>
+<h3>Fixed</h3>
+<ul>
+<li>Fixed lodash version (<a href="https://github.com/laravel/laravel/pull/5060">#5060</a>)</li>
+</ul>
+<h3>Removed</h3>
+<ul>
+<li>Remove Stripe config settings (<a href="https://github.com/laravel/laravel/pull/5075">#5075</a>, <a href="https://github.com/laravel/laravel/commit/bb433725483803a27f21d3b21317072610bc3e9c">bb43372</a>)</li>
+<li>Remove unnecessary X-CSRF-TOKEN header from our Axios instance (<a href="https://github.com/laravel/laravel/pull/5083">#5083</a>)</li>
+</ul>
+
+                </div>
+                <div class="card-footer">
+                    <div class="d-flex align-items-center justify-content-between">
+                        <div class="d-flex align-items-center">
+                            <span class="d-flex me-2">
+                                <span class="bg-primary text-white p-2 rounded-start d-flex align-items-center">Created</span>
+                                <span class="bg-white border border-primary p-2 rounded-end">
+                                    <time datetime="2019-09-09" itemprop="dateCreated">2019-09-09</time>
+                                </span>
+                            </span>
+                            <span class="d-flex me-2">
+                                <span class="bg-success text-white p-2 rounded-start d-flex align-items-center">Published</span>
+                                <span class="bg-white border border-success p-2 rounded-end">
+                                    <time datetime="2019-09-09" itemprop="datePublished">2019-09-09</time>
+                                </span>
+                            </span>
+                            <span class="d-flex me-2">
+                                <span class="bg-warning p-2 rounded-start d-flex align-items-center">Prerelease</span>
+                                <span class="bg-white p-2 border border-warning rounded-end d-flex align-items-center">
+                                    <img src="/assets/images/false.svg?v=2" width="16" height="16" alt="">
+                                </span>
+                            </span>
+                            <span class="d-flex me-2">
+                                <span class="bg-info p-2 rounded-start d-flex align-items-center">Draft</span>
+                                <span class="bg-white p-2 border border-info rounded-end d-flex align-items-center">
+                                    <img src="/assets/images/false.svg?v=2" width="16" height="16" alt="">
+                                </span>
+                            </span>
+                        </div>
+                        <div>
+                            <a href="https://github.com/laravel/laravel/releases/tag/v5.8.35" target="_BLANK" title="Laravel v5 v5.8.35 release on GitHub"><img src="/assets/images/github.png" width="25" height="25" alt=""></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        
+            <div class="card mb-3 shadow overflow-hidden" data-id="MDc6UmVsZWFzZTE5ODU2NzI5">
+                <div class="card-header bg-white">
+                    <div class="d-flex justify-content-between align-items-center">
+                        <div class="d-flex align-items-center">
+                            <h2 class="card-title" itemprop="version"><a id="v5.8.17">v5.8.17</a></h2>
+                        </div>
+                        <div>
+                            <a href="#v5.8.17">#</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-body">
+                    <h3>Added</h3>
+<ul>
+<li>Add ends_with validation message (<a href="https://github.com/laravel/laravel/pull/5020">#5020</a>)</li>
+</ul>
+<h3>Fixed</h3>
+<ul>
+<li>Fix type hint for case of trusting all proxies (string) (<a href="https://github.com/laravel/laravel/pull/5025">#5025</a>)</li>
+</ul>
+
+                </div>
+                <div class="card-footer">
+                    <div class="d-flex align-items-center justify-content-between">
+                        <div class="d-flex align-items-center">
+                            <span class="d-flex me-2">
+                                <span class="bg-primary text-white p-2 rounded-start d-flex align-items-center">Created</span>
+                                <span class="bg-white border border-primary p-2 rounded-end">
+                                    <time datetime="2019-05-14" itemprop="dateCreated">2019-05-14</time>
+                                </span>
+                            </span>
+                            <span class="d-flex me-2">
+                                <span class="bg-success text-white p-2 rounded-start d-flex align-items-center">Published</span>
+                                <span class="bg-white border border-success p-2 rounded-end">
+                                    <time datetime="2019-09-09" itemprop="datePublished">2019-09-09</time>
+                                </span>
+                            </span>
+                            <span class="d-flex me-2">
+                                <span class="bg-warning p-2 rounded-start d-flex align-items-center">Prerelease</span>
+                                <span class="bg-white p-2 border border-warning rounded-end d-flex align-items-center">
+                                    <img src="/assets/images/false.svg?v=2" width="16" height="16" alt="">
+                                </span>
+                            </span>
+                            <span class="d-flex me-2">
+                                <span class="bg-info p-2 rounded-start d-flex align-items-center">Draft</span>
+                                <span class="bg-white p-2 border border-info rounded-end d-flex align-items-center">
+                                    <img src="/assets/images/false.svg?v=2" width="16" height="16" alt="">
+                                </span>
+                            </span>
+                        </div>
+                        <div>
+                            <a href="https://github.com/laravel/laravel/releases/tag/v5.8.17" target="_BLANK" title="Laravel v5 v5.8.17 release on GitHub"><img src="/assets/images/github.png" width="25" height="25" alt=""></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        
+            <div class="card mb-3 shadow overflow-hidden" data-id="MDc6UmVsZWFzZTE3MTk5MjUy">
+                <div class="card-header bg-white">
+                    <div class="d-flex justify-content-between align-items-center">
+                        <div class="d-flex align-items-center">
+                            <h2 class="card-title" itemprop="version"><a id="v5.8.16">v5.8.16</a></h2>
+                        </div>
+                        <div>
+                            <a href="#v5.8.16">#</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-body">
+                    <h3>Added</h3>
+<ul>
+<li>Add IDE type-hint to UserFactory (<a href="https://github.com/laravel/laravel/pull/4990">#4990</a>)</li>
+<li>Update database config relating to Url addition (<a href="https://github.com/laravel/laravel/pull/5018">#5018</a>, <a href="https://github.com/laravel/laravel/commit/b0e0bdc060ce068b73371919b904f3c7f0c1cfa6">b0e0bdc</a>)</li>
+</ul>
+<h3>Changed</h3>
+<ul>
+<li>Upgrade the collision dependency from v2 to v3 (<a href="https://github.com/laravel/laravel/pull/4963">#4963</a>)</li>
+<li>Ignore SQLite journals (<a href="https://github.com/laravel/laravel/pull/4971">#4971</a>)</li>
+<li>Prefix redis database connection by default (<a href="https://github.com/laravel/laravel/pull/4982">#4982</a>, <a href="https://github.com/laravel/laravel/pull/4986">#4986</a>, <a href="https://github.com/laravel/laravel/pull/4987">#4987</a>)</li>
+</ul>
+<h3>Removed</h3>
+<ul>
+<li>Remove <code>.navbar-laravel</code> CSS class (<a href="https://github.com/laravel/laravel/commit/65f8271032c113883fb3f1e8e7b3279821148ad1">65f8271</a>)</li>
+</ul>
+
+                </div>
+                <div class="card-footer">
+                    <div class="d-flex align-items-center justify-content-between">
+                        <div class="d-flex align-items-center">
+                            <span class="d-flex me-2">
+                                <span class="bg-primary text-white p-2 rounded-start d-flex align-items-center">Created</span>
+                                <span class="bg-white border border-primary p-2 rounded-end">
+                                    <time datetime="2019-05-07" itemprop="dateCreated">2019-05-07</time>
+                                </span>
+                            </span>
+                            <span class="d-flex me-2">
+                                <span class="bg-success text-white p-2 rounded-start d-flex align-items-center">Published</span>
+                                <span class="bg-white border border-success p-2 rounded-end">
+                                    <time datetime="2019-05-07" itemprop="datePublished">2019-05-07</time>
+                                </span>
+                            </span>
+                            <span class="d-flex me-2">
+                                <span class="bg-warning p-2 rounded-start d-flex align-items-center">Prerelease</span>
+                                <span class="bg-white p-2 border border-warning rounded-end d-flex align-items-center">
+                                    <img src="/assets/images/false.svg?v=2" width="16" height="16" alt="">
+                                </span>
+                            </span>
+                            <span class="d-flex me-2">
+                                <span class="bg-info p-2 rounded-start d-flex align-items-center">Draft</span>
+                                <span class="bg-white p-2 border border-info rounded-end d-flex align-items-center">
+                                    <img src="/assets/images/false.svg?v=2" width="16" height="16" alt="">
+                                </span>
+                            </span>
+                        </div>
+                        <div>
+                            <a href="https://github.com/laravel/laravel/releases/tag/v5.8.16" target="_BLANK" title="Laravel v5 v5.8.16 release on GitHub"><img src="/assets/images/github.png" width="25" height="25" alt=""></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        
+            <div class="card mb-3 shadow overflow-hidden" data-id="MDc6UmVsZWFzZTE1OTIxMjAw">
+                <div class="card-header bg-white">
+                    <div class="d-flex justify-content-between align-items-center">
+                        <div class="d-flex align-items-center">
+                            <h2 class="card-title" itemprop="version"><a id="v5.8.3">v5.8.3</a></h2>
+                        </div>
+                        <div>
+                            <a href="#v5.8.3">#</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-body">
+                    <h3>Added</h3>
+<ul>
+<li>Add AWS S3 Bucket to <code>.env.example</code> (<a href="https://github.com/laravel/laravel/commit/f84a69ee852bd44363042a61995d330574b6b8c3">f84a69e</a>)</li>
+</ul>
+<h3>Changed</h3>
+<ul>
+<li>Set default AWS region (<a href="https://github.com/laravel/laravel/commit/ff4f40fbabcefcb87facb1346fcfe5b8266eb40d">ff4f40f</a>, <a href="https://github.com/laravel/laravel/pull/4956">#4956</a>)</li>
+</ul>
+<h3>Fixed</h3>
+<ul>
+<li>Comment out non-existing model class and policy example (<a href="https://github.com/laravel/laravel/commit/f4ff4f4176f7d931e301f36b95a46285ac61b8b8">f4ff4f4</a>)</li>
+<li>Only apply MySQL PDO options when extension exists (<a href="https://github.com/laravel/laravel/commit/3001f3c6e232ba7ce2ecdbdfe6e43b4c64ee05ad">3001f3c</a>)</li>
+</ul>
+
+                </div>
+                <div class="card-footer">
+                    <div class="d-flex align-items-center justify-content-between">
+                        <div class="d-flex align-items-center">
+                            <span class="d-flex me-2">
+                                <span class="bg-primary text-white p-2 rounded-start d-flex align-items-center">Created</span>
+                                <span class="bg-white border border-primary p-2 rounded-end">
+                                    <time datetime="2019-02-28" itemprop="dateCreated">2019-02-28</time>
+                                </span>
+                            </span>
+                            <span class="d-flex me-2">
+                                <span class="bg-success text-white p-2 rounded-start d-flex align-items-center">Published</span>
+                                <span class="bg-white border border-success p-2 rounded-end">
+                                    <time datetime="2019-03-05" itemprop="datePublished">2019-03-05</time>
+                                </span>
+                            </span>
+                            <span class="d-flex me-2">
+                                <span class="bg-warning p-2 rounded-start d-flex align-items-center">Prerelease</span>
+                                <span class="bg-white p-2 border border-warning rounded-end d-flex align-items-center">
+                                    <img src="/assets/images/false.svg?v=2" width="16" height="16" alt="">
+                                </span>
+                            </span>
+                            <span class="d-flex me-2">
+                                <span class="bg-info p-2 rounded-start d-flex align-items-center">Draft</span>
+                                <span class="bg-white p-2 border border-info rounded-end d-flex align-items-center">
+                                    <img src="/assets/images/false.svg?v=2" width="16" height="16" alt="">
+                                </span>
+                            </span>
+                        </div>
+                        <div>
+                            <a href="https://github.com/laravel/laravel/releases/tag/v5.8.3" target="_BLANK" title="Laravel v5 v5.8.3 release on GitHub"><img src="/assets/images/github.png" width="25" height="25" alt=""></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        
+            <div class="card mb-3 shadow overflow-hidden" data-id="MDc6UmVsZWFzZTE1Nzg2MTQx">
+                <div class="card-header bg-white">
+                    <div class="d-flex justify-content-between align-items-center">
+                        <div class="d-flex align-items-center">
+                            <h2 class="card-title" itemprop="version"><a id="v5.8.0">v5.8.0</a></h2>
+                        </div>
+                        <div>
+                            <a href="#v5.8.0">#</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-body">
+                    <h3>Added</h3>
+<ul>
+<li>Added DynamoDB configuration (<a href="https://github.com/laravel/laravel/commit/1be5e29753d3592d0305db17d0bffcf312ef5625">1be5e29</a>)</li>
+<li>Add env variable for mysql ssl cert (<a href="https://github.com/laravel/laravel/commit/9180f646d3a99e22d2d2a957df6ed7b550214b2f">9180f64</a>)</li>
+<li>Add beanstalk queue block_for config key (<a href="https://github.com/laravel/laravel/pull/4913">#4913</a>)</li>
+<li>Add <code>hash</code> config param to api auth driver (<a href="https://github.com/laravel/laravel/commit/d201c69a8bb6cf7407ac3a6c0a0e89f183061682">d201c69</a>)</li>
+<li>Add postmark token (<a href="https://github.com/laravel/laravel/commit/45742652ccb0de5e569c23ec826f6106a8550432">4574265</a>)</li>
+<li>Add <code>Arr</code> and <code>Str</code> aliases by default (<a href="https://github.com/laravel/laravel/pull/4951">#4951</a>)</li>
+</ul>
+<h3>Changed</h3>
+<ul>
+<li>Change password min length to 8 (<a href="https://github.com/laravel/laravel/pull/4794">#4794</a>)</li>
+<li>Update UserFactory password (<a href="https://github.com/laravel/laravel/pull/4797">#4797</a>)</li>
+<li>Update AWS env variables (<a href="https://github.com/laravel/laravel/commit/87667b25ae57308f8bbc47f45222d2d1de3ffeed">87667b2</a>)</li>
+<li>Update minimum PHPUnit version to 7.5 (<a href="https://github.com/laravel/laravel/commit/75468420a4c6c28b980319240056e884b4647d63">7546842</a>)</li>
+<li>Replace string helper (<a href="https://github.com/laravel/laravel/commit/fae44eeb26d549a695a1ea0267b117adf55f83e8">fae44ee</a>)</li>
+<li>Use <code>$_SERVER</code> instead of <code>$_ENV</code> for PHPUnit (<a href="https://github.com/laravel/laravel/pull/4943">#4943</a>)</li>
+<li>Add <code>REDIS_CLIENT</code> env variable (<a href="https://github.com/laravel/laravel/commit/ea7fc0b3361a3d3dc2cb9f83f030669bbcb31e1d">ea7fc0b</a>)</li>
+<li>Use bigIncrements by default (<a href="https://github.com/laravel/laravel/pull/4946">#4946</a>)</li>
+</ul>
+<h3>Fixed</h3>
+<ul>
+<li>Fix unterminated statements (<a href="https://github.com/laravel/laravel/pull/4952">#4952</a>)</li>
+</ul>
+<h3>Removed</h3>
+<ul>
+<li>Removed error svgs (<a href="https://github.com/laravel/laravel/commit/cfc2220109dd0813ad5d19702b58b3b1a0a2222e">cfc2220</a>)</li>
+</ul>
+
+                </div>
+                <div class="card-footer">
+                    <div class="d-flex align-items-center justify-content-between">
+                        <div class="d-flex align-items-center">
+                            <span class="d-flex me-2">
+                                <span class="bg-primary text-white p-2 rounded-start d-flex align-items-center">Created</span>
+                                <span class="bg-white border border-primary p-2 rounded-end">
+                                    <time datetime="2019-02-26" itemprop="dateCreated">2019-02-26</time>
+                                </span>
+                            </span>
+                            <span class="d-flex me-2">
+                                <span class="bg-success text-white p-2 rounded-start d-flex align-items-center">Published</span>
+                                <span class="bg-white border border-success p-2 rounded-end">
+                                    <time datetime="2019-02-26" itemprop="datePublished">2019-02-26</time>
+                                </span>
+                            </span>
+                            <span class="d-flex me-2">
+                                <span class="bg-warning p-2 rounded-start d-flex align-items-center">Prerelease</span>
+                                <span class="bg-white p-2 border border-warning rounded-end d-flex align-items-center">
+                                    <img src="/assets/images/false.svg?v=2" width="16" height="16" alt="">
+                                </span>
+                            </span>
+                            <span class="d-flex me-2">
+                                <span class="bg-info p-2 rounded-start d-flex align-items-center">Draft</span>
+                                <span class="bg-white p-2 border border-info rounded-end d-flex align-items-center">
+                                    <img src="/assets/images/false.svg?v=2" width="16" height="16" alt="">
+                                </span>
+                            </span>
+                        </div>
+                        <div>
+                            <a href="https://github.com/laravel/laravel/releases/tag/v5.8.0" target="_BLANK" title="Laravel v5 v5.8.0 release on GitHub"><img src="/assets/images/github.png" width="25" height="25" alt=""></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        
+            <div class="card mb-3 shadow overflow-hidden" data-id="MDc6UmVsZWFzZTE1Nzg1NTU5">
+                <div class="card-header bg-white">
+                    <div class="d-flex justify-content-between align-items-center">
+                        <div class="d-flex align-items-center">
+                            <h2 class="card-title" itemprop="version"><a id="v5.7.28">v5.7.28</a></h2>
+                        </div>
+                        <div>
+                            <a href="#v5.7.28">#</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-body">
+                    <h3>Added</h3>
+<ul>
+<li>Hint for lenient log stacks (<a href="https://github.com/laravel/laravel/pull/4918">#4918</a>)</li>
+<li>Attribute casting for <code>email_verified_at</code> on <code>User</code> model stub (<a href="https://github.com/laravel/laravel/pull/4930">#4930</a>)</li>
+</ul>
+<h3>Changed</h3>
+<ul>
+<li>Remove unused Bootstrap class (<a href="https://github.com/laravel/laravel/pull/4917">#4917</a>)</li>
+<li>Change order of boot and register methods in service providers (<a href="https://github.com/laravel/laravel/pull/4921">#4921</a>)</li>
+<li><code>web.config</code> comment to help debug issues (<a href="https://github.com/laravel/laravel/pull/4924">#4924</a>)</li>
+<li>Use <code>Str::random()</code> instead of <code>str_random()</code> (<a href="https://github.com/laravel/laravel/pull/4926">#4926</a>)</li>
+<li>Remove unnecessary link type on &quot;welcome&quot; view (<a href="https://github.com/laravel/laravel/pull/4935">#4935</a>)</li>
+</ul>
+
+                </div>
+                <div class="card-footer">
+                    <div class="d-flex align-items-center justify-content-between">
+                        <div class="d-flex align-items-center">
+                            <span class="d-flex me-2">
+                                <span class="bg-primary text-white p-2 rounded-start d-flex align-items-center">Created</span>
+                                <span class="bg-white border border-primary p-2 rounded-end">
+                                    <time datetime="2019-02-05" itemprop="dateCreated">2019-02-05</time>
+                                </span>
+                            </span>
+                            <span class="d-flex me-2">
+                                <span class="bg-success text-white p-2 rounded-start d-flex align-items-center">Published</span>
+                                <span class="bg-white border border-success p-2 rounded-end">
+                                    <time datetime="2019-02-26" itemprop="datePublished">2019-02-26</time>
+                                </span>
+                            </span>
+                            <span class="d-flex me-2">
+                                <span class="bg-warning p-2 rounded-start d-flex align-items-center">Prerelease</span>
+                                <span class="bg-white p-2 border border-warning rounded-end d-flex align-items-center">
+                                    <img src="/assets/images/false.svg?v=2" width="16" height="16" alt="">
+                                </span>
+                            </span>
+                            <span class="d-flex me-2">
+                                <span class="bg-info p-2 rounded-start d-flex align-items-center">Draft</span>
+                                <span class="bg-white p-2 border border-info rounded-end d-flex align-items-center">
+                                    <img src="/assets/images/false.svg?v=2" width="16" height="16" alt="">
+                                </span>
+                            </span>
+                        </div>
+                        <div>
+                            <a href="https://github.com/laravel/laravel/releases/tag/v5.7.28" target="_BLANK" title="Laravel v5 v5.7.28 release on GitHub"><img src="/assets/images/github.png" width="25" height="25" alt=""></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        
+            <div class="card mb-3 shadow overflow-hidden" data-id="MDc6UmVsZWFzZTE0NjM4OTk5">
+                <div class="card-header bg-white">
+                    <div class="d-flex justify-content-between align-items-center">
+                        <div class="d-flex align-items-center">
+                            <h2 class="card-title" itemprop="version"><a id="v5.7.19">v5.7.19</a></h2>
+                        </div>
+                        <div>
+                            <a href="#v5.7.19">#</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-body">
+                    <h3>Added</h3>
+<ul>
+<li>Add language entry for <code>starts_with</code> rule (<a href="https://github.com/laravel/laravel/pull/4866">#4866</a>)</li>
+<li>Add env variable (<a href="https://github.com/laravel/laravel/commit/e1b8847a92bdd85163990ee2e3284262da09b5fd">e1b8847</a>)</li>
+</ul>
+<h3>Changed</h3>
+<ul>
+<li>Update .gitignore (<a href="https://github.com/laravel/laravel/commit/bc435e7fdd8308d133a404b1daa811dd30d95fe5">bc435e7</a>)</li>
+<li>Bump to Mix v4 (<a href="https://github.com/laravel/laravel/pull/4882">4882</a>)</li>
+</ul>
+<h3>Fixed</h3>
+<ul>
+<li>Fixed mixed up comment order (<a href="https://github.com/laravel/laravel/pull/4867">#4867</a>)</li>
+</ul>
+
+                </div>
+                <div class="card-footer">
+                    <div class="d-flex align-items-center justify-content-between">
+                        <div class="d-flex align-items-center">
+                            <span class="d-flex me-2">
+                                <span class="bg-primary text-white p-2 rounded-start d-flex align-items-center">Created</span>
+                                <span class="bg-white border border-primary p-2 rounded-end">
+                                    <time datetime="2018-12-15" itemprop="dateCreated">2018-12-15</time>
+                                </span>
+                            </span>
+                            <span class="d-flex me-2">
+                                <span class="bg-success text-white p-2 rounded-start d-flex align-items-center">Published</span>
+                                <span class="bg-white border border-success p-2 rounded-end">
+                                    <time datetime="2018-12-20" itemprop="datePublished">2018-12-20</time>
+                                </span>
+                            </span>
+                            <span class="d-flex me-2">
+                                <span class="bg-warning p-2 rounded-start d-flex align-items-center">Prerelease</span>
+                                <span class="bg-white p-2 border border-warning rounded-end d-flex align-items-center">
+                                    <img src="/assets/images/false.svg?v=2" width="16" height="16" alt="">
+                                </span>
+                            </span>
+                            <span class="d-flex me-2">
+                                <span class="bg-info p-2 rounded-start d-flex align-items-center">Draft</span>
+                                <span class="bg-white p-2 border border-info rounded-end d-flex align-items-center">
+                                    <img src="/assets/images/false.svg?v=2" width="16" height="16" alt="">
+                                </span>
+                            </span>
+                        </div>
+                        <div>
+                            <a href="https://github.com/laravel/laravel/releases/tag/v5.7.19" target="_BLANK" title="Laravel v5 v5.7.19 release on GitHub"><img src="/assets/images/github.png" width="25" height="25" alt=""></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        
+            <div class="card mb-3 shadow overflow-hidden" data-id="MDc6UmVsZWFzZTE0Mjc3ODQ2">
+                <div class="card-header bg-white">
+                    <div class="d-flex justify-content-between align-items-center">
+                        <div class="d-flex align-items-center">
+                            <h2 class="card-title" itemprop="version"><a id="v5.7.15">v5.7.15</a></h2>
+                        </div>
+                        <div>
+                            <a href="#v5.7.15">#</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-body">
+                    <h3>Added</h3>
+<ul>
+<li>Add asset url configuration option (<a href="https://github.com/laravel/laravel/commit/63a403912362654962654e30cec695128d418987">63a4039</a>)</li>
+<li>Add <code>log_channel</code> configuration option (<a href="https://github.com/laravel/laravel/pull/4855">#4855</a>)</li>
+<li>Add env variable for compiled view path (<a href="https://github.com/laravel/laravel/commit/5ea6fe18a89c3d0f5c0860d3777bff97510577b5">5ea6fe1</a>)</li>
+<li>Use env superglobal (<a href="https://github.com/laravel/laravel/commit/071a05bd76ee7eca0ea15ea107b49bcbad9af925">071a05b</a>)</li>
+<li>Add date_equals validation message (<a href="https://github.com/laravel/laravel/pull/4863">#4863</a>)</li>
+</ul>
+<h3>Changed</h3>
+<ul>
+<li>Remove lodash dependency when auto registering Vue components (<a href="https://github.com/laravel/laravel/pull/4853">#4853</a>)</li>
+<li>Clean up auto register Vue components (<a href="https://github.com/laravel/laravel/pull/4854">#4854</a>)</li>
+<li>Normalize <code>composer.json</code> (<a href="https://github.com/laravel/laravel/pull/4856">#4856</a>)</li>
+<li>Update <code>Kernel.php</code> (<a href="https://github.com/laravel/laravel/pull/4861">#4861</a>)</li>
+<li>Change variable name (<a href="https://github.com/laravel/laravel/commit/03ac80b779be0f93e6f9d2dae56533d1e5569c35">03ac80b</a>)</li>
+</ul>
+
+                </div>
+                <div class="card-footer">
+                    <div class="d-flex align-items-center justify-content-between">
+                        <div class="d-flex align-items-center">
+                            <span class="d-flex me-2">
+                                <span class="bg-primary text-white p-2 rounded-start d-flex align-items-center">Created</span>
+                                <span class="bg-white border border-primary p-2 rounded-end">
+                                    <time datetime="2018-11-22" itemprop="dateCreated">2018-11-22</time>
+                                </span>
+                            </span>
+                            <span class="d-flex me-2">
+                                <span class="bg-success text-white p-2 rounded-start d-flex align-items-center">Published</span>
+                                <span class="bg-white border border-success p-2 rounded-end">
+                                    <time datetime="2018-11-30" itemprop="datePublished">2018-11-30</time>
+                                </span>
+                            </span>
+                            <span class="d-flex me-2">
+                                <span class="bg-warning p-2 rounded-start d-flex align-items-center">Prerelease</span>
+                                <span class="bg-white p-2 border border-warning rounded-end d-flex align-items-center">
+                                    <img src="/assets/images/false.svg?v=2" width="16" height="16" alt="">
+                                </span>
+                            </span>
+                            <span class="d-flex me-2">
+                                <span class="bg-info p-2 rounded-start d-flex align-items-center">Draft</span>
+                                <span class="bg-white p-2 border border-info rounded-end d-flex align-items-center">
+                                    <img src="/assets/images/false.svg?v=2" width="16" height="16" alt="">
+                                </span>
+                            </span>
+                        </div>
+                        <div>
+                            <a href="https://github.com/laravel/laravel/releases/tag/v5.7.15" target="_BLANK" title="Laravel v5 v5.7.15 release on GitHub"><img src="/assets/images/github.png" width="25" height="25" alt=""></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        
+            <div class="card mb-3 shadow overflow-hidden" data-id="MDc6UmVsZWFzZTE0Mjc3ODM2">
+                <div class="card-header bg-white">
+                    <div class="d-flex justify-content-between align-items-center">
+                        <div class="d-flex align-items-center">
+                            <h2 class="card-title" itemprop="version"><a id="v5.7.13">v5.7.13</a></h2>
+                        </div>
+                        <div>
+                            <a href="#v5.7.13">#</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-body">
+                    <h3>Added</h3>
+<ul>
+<li>Adding papertrail log channel option (<a href="https://github.com/laravel/laravel/pull/4749">#4749</a>)</li>
+<li>Add missing Mailgun 'endpoint' option (<a href="https://github.com/laravel/laravel/pull/4752">#4752</a>)</li>
+<li>Add new Stripe webhook config values (<a href="https://github.com/laravel/laravel/pull/4803">#4803</a>)</li>
+<li>Add message for UUID validation rule (<a href="https://github.com/laravel/laravel/pull/4834">#4834</a>)</li>
+<li>Introduce sqlite foreign_key_constraints config option (<a href="https://github.com/laravel/laravel/pull/4838">#4838</a>)</li>
+<li>Auto register Vue components (<a href="https://github.com/laravel/laravel/pull/4843">#4843</a>)</li>
+</ul>
+<h3>Changed</h3>
+<ul>
+<li>Updated <code>QUEUE_DRIVER</code> env var to <code>QUEUE_CONNECTION</code> in <code>phpunit.xml</code> (<a href="https://github.com/laravel/laravel/pull/4746">#4746</a>)</li>
+<li>Update VerificationController (<a href="https://github.com/laravel/laravel/pull/4756">#4756</a>)</li>
+<li>Seeded users should be verified by default (<a href="https://github.com/laravel/laravel/pull/4761">#4761</a>)</li>
+<li>Preserve colors (<a href="https://github.com/laravel/laravel/pull/4763">#4763</a>)</li>
+<li>Set logs to daily by default (<a href="https://github.com/laravel/laravel/pull/4767">#4767</a>)</li>
+<li>Change default days to 14 for daily channel (<a href="https://github.com/laravel/laravel/commit/cd8dd76b67fb3ae9984b1477df4a9a3f0131ca87">cd8dd76</a>)</li>
+<li>Check if register route is enabled (<a href="https://github.com/laravel/laravel/pull/4775">#4775</a>)</li>
+<li>Update lang attribute (<a href="https://github.com/laravel/laravel/pull/4781">#4781</a>)</li>
+<li>Changes the translation for &quot;required_with_all&quot; validation rule (<a href="https://github.com/laravel/laravel/pull/4782">#4782</a>)</li>
+<li>Update database config (<a href="https://github.com/laravel/laravel/pull/4783">#4783</a>)</li>
+<li>Removing double arrow alignments (<a href="https://github.com/laravel/laravel/pull/4830">#4830</a>)</li>
+<li>Update vue version to 2.5.17 (<a href="https://github.com/laravel/laravel/pull/4831">#4831</a>)</li>
+<li>Use env value for redis queue name (<a href="https://github.com/laravel/laravel/pull/4837">#4837</a>)</li>
+</ul>
+<h3>Fixed</h3>
+<ul>
+<li>Update <code>HttpKernel</code> to use <code>Authenticate</code> middleware under <code>App</code> namespace (<a href="https://github.com/laravel/laravel/pull/4757">#4757</a>)</li>
+<li>Persist the <code>/storage/framework/cache/data</code> directory (<a href="https://github.com/laravel/laravel/pull/4760">#4760</a>)</li>
+<li>Make app path stream safe (<a href="https://github.com/laravel/laravel/pull/4777">#4777</a>)</li>
+<li>Use correct facade (<a href="https://github.com/laravel/laravel/pull/4780">#4780</a>)</li>
+<li>Revert <a href="https://github.com/laravel/laravel/pull/4780">#4744</a> (<a href="https://github.com/laravel/laravel/pull/4791">#4791</a>)</li>
+<li>Don't redirect for api calls (<a href="https://github.com/laravel/laravel/pull/4805">#4805</a>)</li>
+<li>Fix bad font size render on link (<a href="https://github.com/laravel/laravel/pull/4822">#4822</a>)</li>
+<li>Changed syntax for validation (<a href="https://github.com/laravel/laravel/pull/4820">#4820</a>)</li>
+<li>Fix running mix tasks error (<a href="https://github.com/laravel/laravel/pull/4832">#4832</a>)</li>
+</ul>
+<h3>Removed</h3>
+<ul>
+<li>Remove X-UA-Compatible meta tag (<a href="https://github.com/laravel/laravel/pull/4748">#4748</a>)</li>
+</ul>
+
+                </div>
+                <div class="card-footer">
+                    <div class="d-flex align-items-center justify-content-between">
+                        <div class="d-flex align-items-center">
+                            <span class="d-flex me-2">
+                                <span class="bg-primary text-white p-2 rounded-start d-flex align-items-center">Created</span>
+                                <span class="bg-white border border-primary p-2 rounded-end">
+                                    <time datetime="2018-11-08" itemprop="dateCreated">2018-11-08</time>
+                                </span>
+                            </span>
+                            <span class="d-flex me-2">
+                                <span class="bg-success text-white p-2 rounded-start d-flex align-items-center">Published</span>
+                                <span class="bg-white border border-success p-2 rounded-end">
+                                    <time datetime="2018-11-30" itemprop="datePublished">2018-11-30</time>
+                                </span>
+                            </span>
+                            <span class="d-flex me-2">
+                                <span class="bg-warning p-2 rounded-start d-flex align-items-center">Prerelease</span>
+                                <span class="bg-white p-2 border border-warning rounded-end d-flex align-items-center">
+                                    <img src="/assets/images/false.svg?v=2" width="16" height="16" alt="">
+                                </span>
+                            </span>
+                            <span class="d-flex me-2">
+                                <span class="bg-info p-2 rounded-start d-flex align-items-center">Draft</span>
+                                <span class="bg-white p-2 border border-info rounded-end d-flex align-items-center">
+                                    <img src="/assets/images/false.svg?v=2" width="16" height="16" alt="">
+                                </span>
+                            </span>
+                        </div>
+                        <div>
+                            <a href="https://github.com/laravel/laravel/releases/tag/v5.7.13" target="_BLANK" title="Laravel v5 v5.7.13 release on GitHub"><img src="/assets/images/github.png" width="25" height="25" alt=""></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        
+            <div class="card mb-3 shadow overflow-hidden" data-id="MDc6UmVsZWFzZTE0MjYyNTUy">
+                <div class="card-header bg-white">
+                    <div class="d-flex justify-content-between align-items-center">
+                        <div class="d-flex align-items-center">
+                            <h2 class="card-title" itemprop="version"><a id="v5.7.0">v5.7.0</a></h2>
+                        </div>
+                        <div>
+                            <a href="#v5.7.0">#</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-body">
+                    <h3>Added</h3>
+<ul>
+<li>Added email verification functionality (<a href="https://github.com/laravel/laravel/pull/4689">#4689</a>)</li>
+<li>Added customizable redirect on auth failure (<a href="https://github.com/laravel/laravel/commit/a14e62325cbe82a615ccd2e80925c75cb0bf1eaf">a14e623</a>)</li>
+<li>Added possibility to make httpOnly CSRF cookie optional (<a href="https://github.com/laravel/laravel/pull/4692">#4692</a>)</li>
+<li>Added <code>beyondcode/laravel-dump-server</code> : <code>^1.0</code> to <code>composer.json</code> (<a href="https://github.com/laravel/laravel/commit/ff99e2fd5c6f868b9be53420057551c790f10785">ff99e2f</a>, <a href="https://github.com/laravel/laravel/pull/4736">#4736</a>)</li>
+<li>Added <code>argon2id</code> support in <code>hashing.php</code> (<a href="https://github.com/laravel/laravel/commit/28908d83d9f3b078ae01ed21a42b87edf1fd393d">28908d8</a>)</li>
+<li>Added <code>SESSION_CONNECTION</code> and <code>SESSION_STORE</code> env. variable (<a href="https://github.com/laravel/laravel/pull/4735">#4735</a>)</li>
+</ul>
+<h3>Changed</h3>
+<ul>
+<li>Changed <code>QUEUE_DRIVER</code> env variable name to <code>QUEUE_CONNECTION</code> (<a href="https://github.com/laravel/laravel/commit/c30adc88c1cf3f30618145c8b698734cbe03b19c">c30adc8</a>)</li>
+<li>Use separate cache database for Redis (<a href="https://github.com/laravel/laravel/pull/4665">#4665</a>)</li>
+<li>Upgrade Lodash to <code>^4.17.5</code> (<a href="https://github.com/laravel/laravel/pull/4730">#4730</a>)</li>
+<li>Changed font to <code>Nunito</code> from <code>Raleway</code> (<a href="https://github.com/laravel/laravel/pull/4727">#4727</a>)</li>
+<li>Defined <code>mix</code> as <code>const</code> in <code>webpack.mix.js</code> (<a href="https://github.com/laravel/laravel/pull/4741">#4741</a>)</li>
+<li>Make Asset Directory Flattened (<a href="https://github.com/laravel/laravel/commit/ff38d4e1a007c1a7709b5a614da1036adb464b32">ff38d4e</a>)</li>
+</ul>
+<h3>Fixed</h3>
+<ul>
+<li>Fixed pagination translation (<a href="https://github.com/laravel/laravel/pull/4744">#4744</a>)</li>
+</ul>
+
+                </div>
+                <div class="card-footer">
+                    <div class="d-flex align-items-center justify-content-between">
+                        <div class="d-flex align-items-center">
+                            <span class="d-flex me-2">
+                                <span class="bg-primary text-white p-2 rounded-start d-flex align-items-center">Created</span>
+                                <span class="bg-white border border-primary p-2 rounded-end">
+                                    <time datetime="2018-09-04" itemprop="dateCreated">2018-09-04</time>
+                                </span>
+                            </span>
+                            <span class="d-flex me-2">
+                                <span class="bg-success text-white p-2 rounded-start d-flex align-items-center">Published</span>
+                                <span class="bg-white border border-success p-2 rounded-end">
+                                    <time datetime="2018-11-29" itemprop="datePublished">2018-11-29</time>
+                                </span>
+                            </span>
+                            <span class="d-flex me-2">
+                                <span class="bg-warning p-2 rounded-start d-flex align-items-center">Prerelease</span>
+                                <span class="bg-white p-2 border border-warning rounded-end d-flex align-items-center">
+                                    <img src="/assets/images/false.svg?v=2" width="16" height="16" alt="">
+                                </span>
+                            </span>
+                            <span class="d-flex me-2">
+                                <span class="bg-info p-2 rounded-start d-flex align-items-center">Draft</span>
+                                <span class="bg-white p-2 border border-info rounded-end d-flex align-items-center">
+                                    <img src="/assets/images/false.svg?v=2" width="16" height="16" alt="">
+                                </span>
+                            </span>
+                        </div>
+                        <div>
+                            <a href="https://github.com/laravel/laravel/releases/tag/v5.7.0" target="_BLANK" title="Laravel v5 v5.7.0 release on GitHub"><img src="/assets/images/github.png" width="25" height="25" alt=""></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        
+            <div class="card mb-3 shadow overflow-hidden" data-id="MDc6UmVsZWFzZTE0MjYyNTQx">
+                <div class="card-header bg-white">
+                    <div class="d-flex justify-content-between align-items-center">
+                        <div class="d-flex align-items-center">
+                            <h2 class="card-title" itemprop="version"><a id="v5.6.33">v5.6.33</a></h2>
+                        </div>
+                        <div>
+                            <a href="#v5.6.33">#</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-body">
+                    <h3>Added</h3>
+<ul>
+<li>Added <code>Http/Middleware/CheckForMaintenanceMode.php</code> (<a href="https://github.com/laravel/laravel/pull/4703">#4703</a>)</li>
+</ul>
+<h3>Changed</h3>
+<ul>
+<li>Update font and colors in <code>scss</code> (<a href="https://github.com/laravel/laravel/commit/6646ad7c527e2b3320661fa1d76a54dd6e896e57">6646ad7</a>)</li>
+<li>Changed message for <code>alpha_dash</code> validation rule (<a href="https://github.com/laravel/laravel/pull/4661">#4661</a>)</li>
+</ul>
+
+                </div>
+                <div class="card-footer">
+                    <div class="d-flex align-items-center justify-content-between">
+                        <div class="d-flex align-items-center">
+                            <span class="d-flex me-2">
+                                <span class="bg-primary text-white p-2 rounded-start d-flex align-items-center">Created</span>
+                                <span class="bg-white border border-primary p-2 rounded-end">
+                                    <time datetime="2018-08-13" itemprop="dateCreated">2018-08-13</time>
+                                </span>
+                            </span>
+                            <span class="d-flex me-2">
+                                <span class="bg-success text-white p-2 rounded-start d-flex align-items-center">Published</span>
+                                <span class="bg-white border border-success p-2 rounded-end">
+                                    <time datetime="2018-11-29" itemprop="datePublished">2018-11-29</time>
+                                </span>
+                            </span>
+                            <span class="d-flex me-2">
+                                <span class="bg-warning p-2 rounded-start d-flex align-items-center">Prerelease</span>
+                                <span class="bg-white p-2 border border-warning rounded-end d-flex align-items-center">
+                                    <img src="/assets/images/false.svg?v=2" width="16" height="16" alt="">
+                                </span>
+                            </span>
+                            <span class="d-flex me-2">
+                                <span class="bg-info p-2 rounded-start d-flex align-items-center">Draft</span>
+                                <span class="bg-white p-2 border border-info rounded-end d-flex align-items-center">
+                                    <img src="/assets/images/false.svg?v=2" width="16" height="16" alt="">
+                                </span>
+                            </span>
+                        </div>
+                        <div>
+                            <a href="https://github.com/laravel/laravel/releases/tag/v5.6.33" target="_BLANK" title="Laravel v5 v5.6.33 release on GitHub"><img src="/assets/images/github.png" width="25" height="25" alt=""></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        
+            <div class="card mb-3 shadow overflow-hidden" data-id="MDc6UmVsZWFzZTE0MjYyNTI1">
+                <div class="card-header bg-white">
+                    <div class="d-flex justify-content-between align-items-center">
+                        <div class="d-flex align-items-center">
+                            <h2 class="card-title" itemprop="version"><a id="v5.6.21">v5.6.21</a></h2>
+                        </div>
+                        <div>
+                            <a href="#v5.6.21">#</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-body">
+                    <h3>Added</h3>
+<ul>
+<li>Added hashing configuration (<a href="https://github.com/laravel/laravel/pull/4613">#4613</a>)</li>
+<li>Added stderr example into <code>config/logging.php</code> (<a href="https://github.com/laravel/laravel/commit/66f5757d58cb3f6d1152ec2d5f12e247eb2242e2">66f5757</a>)</li>
+<li>Added <code>SES_REGION</code> to local environment file (<a href="https://github.com/laravel/laravel/pull/4629">#4629</a>)</li>
+<li>Added messages for <code>gt</code>/<code>lt</code>/<code>gte</code>/<code>lte</code> validation rules (<a href="https://github.com/laravel/laravel/pull/4654">#4654</a>)</li>
+</ul>
+<h3>Changed</h3>
+<ul>
+<li>Set <code>bcrypt rounds</code> using the <code>hashing</code> config (<a href="https://github.com/laravel/laravel/pull/4643">#4643</a>)</li>
+</ul>
+
+                </div>
+                <div class="card-footer">
+                    <div class="d-flex align-items-center justify-content-between">
+                        <div class="d-flex align-items-center">
+                            <span class="d-flex me-2">
+                                <span class="bg-primary text-white p-2 rounded-start d-flex align-items-center">Created</span>
+                                <span class="bg-white border border-primary p-2 rounded-end">
+                                    <time datetime="2018-05-08" itemprop="dateCreated">2018-05-08</time>
+                                </span>
+                            </span>
+                            <span class="d-flex me-2">
+                                <span class="bg-success text-white p-2 rounded-start d-flex align-items-center">Published</span>
+                                <span class="bg-white border border-success p-2 rounded-end">
+                                    <time datetime="2018-11-29" itemprop="datePublished">2018-11-29</time>
+                                </span>
+                            </span>
+                            <span class="d-flex me-2">
+                                <span class="bg-warning p-2 rounded-start d-flex align-items-center">Prerelease</span>
+                                <span class="bg-white p-2 border border-warning rounded-end d-flex align-items-center">
+                                    <img src="/assets/images/false.svg?v=2" width="16" height="16" alt="">
+                                </span>
+                            </span>
+                            <span class="d-flex me-2">
+                                <span class="bg-info p-2 rounded-start d-flex align-items-center">Draft</span>
+                                <span class="bg-white p-2 border border-info rounded-end d-flex align-items-center">
+                                    <img src="/assets/images/false.svg?v=2" width="16" height="16" alt="">
+                                </span>
+                            </span>
+                        </div>
+                        <div>
+                            <a href="https://github.com/laravel/laravel/releases/tag/v5.6.21" target="_BLANK" title="Laravel v5 v5.6.21 release on GitHub"><img src="/assets/images/github.png" width="25" height="25" alt=""></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        
+            <div class="card mb-3 shadow overflow-hidden" data-id="MDc6UmVsZWFzZTEwOTAzNzQx">
+                <div class="card-header bg-white">
+                    <div class="d-flex justify-content-between align-items-center">
+                        <div class="d-flex align-items-center">
+                            <h2 class="card-title" itemprop="version"><a id="v5.6.12">v5.6.12</a></h2>
+                        </div>
+                        <div>
+                            <a href="#v5.6.12">#</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-body">
+                    <h3>Added</h3>
+<ul>
+<li>Added message for <code>not_regex</code> validation rule (<a href="https://github.com/laravel/laravel/pull/4602">#4602</a>)</li>
+<li>Added <code>signed</code> middleware alias for <code>ValidateSignature</code> (<a href="https://github.com/laravel/laravel/commit/4369e9144ce1062941eda2b19772dbdcb10e9027">4369e91</a>)</li>
+<li>Added <code>stderr</code> example to <code>config/logging.php</code> (<a href="https://github.com/laravel/laravel/commit/66f5757d58cb3f6d1152ec2d5f12e247eb2242e2">66f5757</a>)</li>
+</ul>
+<h3>Changed</h3>
+<ul>
+<li>Set <code>MAIL_DRIVER</code> in <code>phpunit.xml</code> (<a href="https://github.com/laravel/laravel/pull/4607">#4607</a>)</li>
+</ul>
+<h3>Removed</h3>
+<ul>
+<li>Removed &quot;thanks&quot; package (<a href="https://github.com/laravel/laravel/pull/4593">#4593</a>)</li>
+</ul>
+
+                </div>
+                <div class="card-footer">
+                    <div class="d-flex align-items-center justify-content-between">
+                        <div class="d-flex align-items-center">
+                            <span class="d-flex me-2">
+                                <span class="bg-primary text-white p-2 rounded-start d-flex align-items-center">Created</span>
+                                <span class="bg-white border border-primary p-2 rounded-end">
+                                    <time datetime="2018-03-14" itemprop="dateCreated">2018-03-14</time>
+                                </span>
+                            </span>
+                            <span class="d-flex me-2">
+                                <span class="bg-success text-white p-2 rounded-start d-flex align-items-center">Published</span>
+                                <span class="bg-white border border-success p-2 rounded-end">
+                                    <time datetime="2018-05-08" itemprop="datePublished">2018-05-08</time>
+                                </span>
+                            </span>
+                            <span class="d-flex me-2">
+                                <span class="bg-warning p-2 rounded-start d-flex align-items-center">Prerelease</span>
+                                <span class="bg-white p-2 border border-warning rounded-end d-flex align-items-center">
+                                    <img src="/assets/images/false.svg?v=2" width="16" height="16" alt="">
+                                </span>
+                            </span>
+                            <span class="d-flex me-2">
+                                <span class="bg-info p-2 rounded-start d-flex align-items-center">Draft</span>
+                                <span class="bg-white p-2 border border-info rounded-end d-flex align-items-center">
+                                    <img src="/assets/images/false.svg?v=2" width="16" height="16" alt="">
+                                </span>
+                            </span>
+                        </div>
+                        <div>
+                            <a href="https://github.com/laravel/laravel/releases/tag/v5.6.12" target="_BLANK" title="Laravel v5 v5.6.12 release on GitHub"><img src="/assets/images/github.png" width="25" height="25" alt=""></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        
+            <div class="card mb-3 shadow overflow-hidden" data-id="MDc6UmVsZWFzZTEwOTAzNjE1">
+                <div class="card-header bg-white">
+                    <div class="d-flex justify-content-between align-items-center">
+                        <div class="d-flex align-items-center">
+                            <h2 class="card-title" itemprop="version"><a id="v5.6.7">v5.6.7</a></h2>
+                        </div>
+                        <div>
+                            <a href="#v5.6.7">#</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-body">
+                    <h3>Changed</h3>
+<ul>
+<li>Use <code>Hash::make()</code> in <code>RegisterController</code> (<a href="https://github.com/laravel/laravel/pull/4570">#4570</a>)</li>
+<li>Update Collision to <code>2.0</code> (<a href="https://github.com/laravel/laravel/pull/4581">#4581</a>)</li>
+</ul>
+<h3>Removed</h3>
+<ul>
+<li>Removed Bootstrap 3 variables (<a href="https://github.com/laravel/laravel/pull/4572">#4572</a>)</li>
+</ul>
+
+                </div>
+                <div class="card-footer">
+                    <div class="d-flex align-items-center justify-content-between">
+                        <div class="d-flex align-items-center">
+                            <span class="d-flex me-2">
+                                <span class="bg-primary text-white p-2 rounded-start d-flex align-items-center">Created</span>
+                                <span class="bg-white border border-primary p-2 rounded-end">
+                                    <time datetime="2018-02-27" itemprop="dateCreated">2018-02-27</time>
+                                </span>
+                            </span>
+                            <span class="d-flex me-2">
+                                <span class="bg-success text-white p-2 rounded-start d-flex align-items-center">Published</span>
+                                <span class="bg-white border border-success p-2 rounded-end">
+                                    <time datetime="2018-05-08" itemprop="datePublished">2018-05-08</time>
+                                </span>
+                            </span>
+                            <span class="d-flex me-2">
+                                <span class="bg-warning p-2 rounded-start d-flex align-items-center">Prerelease</span>
+                                <span class="bg-white p-2 border border-warning rounded-end d-flex align-items-center">
+                                    <img src="/assets/images/false.svg?v=2" width="16" height="16" alt="">
+                                </span>
+                            </span>
+                            <span class="d-flex me-2">
+                                <span class="bg-info p-2 rounded-start d-flex align-items-center">Draft</span>
+                                <span class="bg-white p-2 border border-info rounded-end d-flex align-items-center">
+                                    <img src="/assets/images/false.svg?v=2" width="16" height="16" alt="">
+                                </span>
+                            </span>
+                        </div>
+                        <div>
+                            <a href="https://github.com/laravel/laravel/releases/tag/v5.6.7" target="_BLANK" title="Laravel v5 v5.6.7 release on GitHub"><img src="/assets/images/github.png" width="25" height="25" alt=""></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        
+            <div class="card mb-3 shadow overflow-hidden" data-id="MDc6UmVsZWFzZTk1NzY3ODk=">
+                <div class="card-header bg-white">
+                    <div class="d-flex justify-content-between align-items-center">
+                        <div class="d-flex align-items-center">
+                            <h2 class="card-title" itemprop="version"><a id="v5.6.0">v5.6.0</a></h2>
+                        </div>
+                        <div>
+                            <a href="#v5.6.0">#</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-body">
+                    <h3>Added</h3>
+<ul>
+<li>Added <code>filesystems.disks.s3.url</code> config parameter (<a href="https://github.com/laravel/laravel/pull/4483">#4483</a>)</li>
+<li>Added <code>queue.connections.redis.block_for</code> config parameter (<a href="https://github.com/laravel/laravel/commit/d6d001356232dac4549d152baf685373a6d6c8f8">d6d0013</a>)</li>
+<li>Added Collision package (<a href="https://github.com/laravel/laravel/pull/4514">#4514</a>)</li>
+<li>Added <code>SetCacheHeaders</code> middleware to <code>Kernel::$routeMiddleware</code> (<a href="https://github.com/laravel/laravel/pull/4515">#4515</a>)</li>
+<li>Added hashing configuration file (<a href="https://github.com/laravel/laravel/commit/bac7595f02835ae2d35953a2c9ba039592ed8a94">bac7595</a>)</li>
+</ul>
+<h3>Changed</h3>
+<ul>
+<li>Require PHP 7.1.3 or newer (<a href="https://github.com/laravel/laravel/pull/4568">#4568</a>)</li>
+<li>Upgraded PHPUnit to v7 (<a href="https://github.com/laravel/laravel/commit/f771896c285c73fa1a2ac83c1b2770011f8e49ef">f771896</a>)</li>
+<li>Upgraded Mix to v2 (<a href="https://github.com/laravel/laravel/pull/4557">#4557</a>)</li>
+<li>Upgraded <code>fideloper/proxy</code> to v4 (<a href="https://github.com/laravel/laravel/pull/4518">#4518</a>)</li>
+<li>Set hash driver in <code>CreatesApplication</code> (<a href="https://github.com/laravel/laravel/commit/7b138fe39822e34e0c563462ffee6036b4bda226">7b138fe</a>)</li>
+<li>Upgraded to Bootstrap 4 (<a href="https://github.com/laravel/laravel/pull/4519">#4519</a>, <a href="https://github.com/laravel/laravel/commit/c0cda4f81fd7a25851ed8069f0aa70c2d21a941c">c0cda4f</a>, <a href="https://github.com/laravel/laravel/commit/cd53623249e8b2b2d7517b1585f68e7e31be1a8a">cd53623</a>, <a href="https://github.com/laravel/laravel/commit/3926520f730ab681462dff3275e468b6ad3f061d">3926520</a>)</li>
+<li>Updated logging configuration (<a href="https://github.com/laravel/laravel/commit/acabdff2e3cde6bc98cc2d951a8fcadf22eb71f0">acabdff</a>, <a href="https://github.com/laravel/laravel/commit/bd5783b5e9db18b353fe10f5ed8bd6f7ca7b8c6e">bd5783b</a>, <a href="https://github.com/laravel/laravel/commit/ff0bec857ead9698b2783143b14b5332b96e23cc">ff0bec8</a>, <a href="https://github.com/laravel/laravel/commit/f6e0fd7ac3e838985a249cd04f78b482d96f230a">f6e0fd7</a>, <a href="https://github.com/laravel/laravel/commit/2eeca4e220254393341e25bc7e45e08480c9a683">2eeca4e</a>, <a href="https://github.com/laravel/laravel/commit/ebb0a2a84fa431e30103c98cf4bed3fa3713ad59">ebb0a2a</a>, <a href="https://github.com/laravel/laravel/commit/b78f5bd6e9f739f35383165798ad2022b8fb509c">b78f5bd</a>)</li>
+<li>Use Mix environment variables (<a href="https://github.com/laravel/laravel/commit/224f9949c74fcea2eeceae0a1f65d9c2e7498a27">224f994</a>, <a href="https://github.com/laravel/laravel/commit/2db1e0c5e8525f3ee4b3850f0116c13224790dff">2db1e0c</a>)</li>
+</ul>
+
+                </div>
+                <div class="card-footer">
+                    <div class="d-flex align-items-center justify-content-between">
+                        <div class="d-flex align-items-center">
+                            <span class="d-flex me-2">
+                                <span class="bg-primary text-white p-2 rounded-start d-flex align-items-center">Created</span>
+                                <span class="bg-white border border-primary p-2 rounded-end">
+                                    <time datetime="2018-02-07" itemprop="dateCreated">2018-02-07</time>
+                                </span>
+                            </span>
+                            <span class="d-flex me-2">
+                                <span class="bg-success text-white p-2 rounded-start d-flex align-items-center">Published</span>
+                                <span class="bg-white border border-success p-2 rounded-end">
+                                    <time datetime="2018-02-07" itemprop="datePublished">2018-02-07</time>
+                                </span>
+                            </span>
+                            <span class="d-flex me-2">
+                                <span class="bg-warning p-2 rounded-start d-flex align-items-center">Prerelease</span>
+                                <span class="bg-white p-2 border border-warning rounded-end d-flex align-items-center">
+                                    <img src="/assets/images/false.svg?v=2" width="16" height="16" alt="">
+                                </span>
+                            </span>
+                            <span class="d-flex me-2">
+                                <span class="bg-info p-2 rounded-start d-flex align-items-center">Draft</span>
+                                <span class="bg-white p-2 border border-info rounded-end d-flex align-items-center">
+                                    <img src="/assets/images/false.svg?v=2" width="16" height="16" alt="">
+                                </span>
+                            </span>
+                        </div>
+                        <div>
+                            <a href="https://github.com/laravel/laravel/releases/tag/v5.6.0" target="_BLANK" title="Laravel v5 v5.6.0 release on GitHub"><img src="/assets/images/github.png" width="25" height="25" alt=""></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        
+            <div class="card mb-3 shadow overflow-hidden" data-id="MDc6UmVsZWFzZTk1NzU1Njg=">
+                <div class="card-header bg-white">
+                    <div class="d-flex justify-content-between align-items-center">
+                        <div class="d-flex align-items-center">
+                            <h2 class="card-title" itemprop="version"><a id="v5.5.28">v5.5.28</a></h2>
+                        </div>
+                        <div>
+                            <a href="#v5.5.28">#</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-body">
+                    <h3>Added</h3>
+<ul>
+<li>Added <code>symfony/thanks</code> (<a href="https://github.com/laravel/laravel/commit/60de3a5670c4a3bf5fb96433828b6aadd7df0e53">60de3a5</a>)</li>
+</ul>
+<h3>Changed</h3>
+<ul>
+<li>Reduced hash computations during tests (<a href="https://github.com/laravel/laravel/pull/4517">#4517</a>, <a href="https://github.com/laravel/laravel/commit/4bfb164c26e4e15ec367912100a71b8fe1500b5c">4bfb164</a>)</li>
+<li>Use environment variables for SQS config (<a href="https://github.com/laravel/laravel/pull/4516">#4516</a>, <a href="https://github.com/laravel/laravel/commit/aa4b02358a018ebc35123caeb92dcca0669e2816">aa4b023</a>)</li>
+<li>Use hard-coded password hash (<a href="https://github.com/laravel/laravel/commit/f693a20a3ce6d2461ca75490d44cd1b6ba09ee84">f693a20</a>)</li>
+<li>Updated default Echo configuration for Pusher (<a href="https://github.com/laravel/laravel/pull/4525">#4525</a>, <a href="https://github.com/laravel/laravel/commit/aad59400e2d69727224a3ca9b6aa9f9d7c87e9f7">aad5940</a>, <a href="https://github.com/laravel/laravel/pull/4526">#4526</a>, <a href="https://github.com/laravel/laravel/commit/a32af97ede49fdd57e8217a9fd484b4cb4ab1bbf">a32af97</a>)</li>
+</ul>
+
+                </div>
+                <div class="card-footer">
+                    <div class="d-flex align-items-center justify-content-between">
+                        <div class="d-flex align-items-center">
+                            <span class="d-flex me-2">
+                                <span class="bg-primary text-white p-2 rounded-start d-flex align-items-center">Created</span>
+                                <span class="bg-white border border-primary p-2 rounded-end">
+                                    <time datetime="2018-01-03" itemprop="dateCreated">2018-01-03</time>
+                                </span>
+                            </span>
+                            <span class="d-flex me-2">
+                                <span class="bg-success text-white p-2 rounded-start d-flex align-items-center">Published</span>
+                                <span class="bg-white border border-success p-2 rounded-end">
+                                    <time datetime="2018-02-07" itemprop="datePublished">2018-02-07</time>
+                                </span>
+                            </span>
+                            <span class="d-flex me-2">
+                                <span class="bg-warning p-2 rounded-start d-flex align-items-center">Prerelease</span>
+                                <span class="bg-white p-2 border border-warning rounded-end d-flex align-items-center">
+                                    <img src="/assets/images/false.svg?v=2" width="16" height="16" alt="">
+                                </span>
+                            </span>
+                            <span class="d-flex me-2">
+                                <span class="bg-info p-2 rounded-start d-flex align-items-center">Draft</span>
+                                <span class="bg-white p-2 border border-info rounded-end d-flex align-items-center">
+                                    <img src="/assets/images/false.svg?v=2" width="16" height="16" alt="">
+                                </span>
+                            </span>
+                        </div>
+                        <div>
+                            <a href="https://github.com/laravel/laravel/releases/tag/v5.5.28" target="_BLANK" title="Laravel v5 v5.5.28 release on GitHub"><img src="/assets/images/github.png" width="25" height="25" alt=""></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        
+            <div class="card mb-3 shadow overflow-hidden" data-id="MDc6UmVsZWFzZTk1NzU1NjY=">
+                <div class="card-header bg-white">
+                    <div class="d-flex justify-content-between align-items-center">
+                        <div class="d-flex align-items-center">
+                            <h2 class="card-title" itemprop="version"><a id="v5.5.22">v5.5.22</a></h2>
+                        </div>
+                        <div>
+                            <a href="#v5.5.22">#</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-body">
+                    <h3>Added</h3>
+<ul>
+<li>Added <code>-Indexes</code> option in <code>.htaccess</code> (<a href="https://github.com/laravel/laravel/pull/4422">#4422</a>)</li>
+</ul>
+<h3>Changed</h3>
+<ul>
+<li>Load session lifetime from env file (<a href="https://github.com/laravel/laravel/pull/4444">#4444</a>)</li>
+<li>Update mockery to 1.0 (<a href="https://github.com/laravel/laravel/pull/4458">#4458</a>)</li>
+<li>Generate cache prefix from <code>APP_NAME</code> (<a href="https://github.com/laravel/laravel/pull/4409">#4409</a>)</li>
+<li>Match AWS environment variable name with AWS defaults (<a href="https://github.com/laravel/laravel/pull/4470">#4470</a>)</li>
+<li>Don't show progress for <code>production</code> command (<a href="https://github.com/laravel/laravel/pull/4467">#4467</a>)</li>
+</ul>
+<h3>Fixed</h3>
+<ul>
+<li>Fixed directive order in <code>.htaccess</code> (<a href="https://github.com/laravel/laravel/pull/4433">#4433</a>)</li>
+</ul>
+
+                </div>
+                <div class="card-footer">
+                    <div class="d-flex align-items-center justify-content-between">
+                        <div class="d-flex align-items-center">
+                            <span class="d-flex me-2">
+                                <span class="bg-primary text-white p-2 rounded-start d-flex align-items-center">Created</span>
+                                <span class="bg-white border border-primary p-2 rounded-end">
+                                    <time datetime="2017-11-21" itemprop="dateCreated">2017-11-21</time>
+                                </span>
+                            </span>
+                            <span class="d-flex me-2">
+                                <span class="bg-success text-white p-2 rounded-start d-flex align-items-center">Published</span>
+                                <span class="bg-white border border-success p-2 rounded-end">
+                                    <time datetime="2018-02-07" itemprop="datePublished">2018-02-07</time>
+                                </span>
+                            </span>
+                            <span class="d-flex me-2">
+                                <span class="bg-warning p-2 rounded-start d-flex align-items-center">Prerelease</span>
+                                <span class="bg-white p-2 border border-warning rounded-end d-flex align-items-center">
+                                    <img src="/assets/images/false.svg?v=2" width="16" height="16" alt="">
+                                </span>
+                            </span>
+                            <span class="d-flex me-2">
+                                <span class="bg-info p-2 rounded-start d-flex align-items-center">Draft</span>
+                                <span class="bg-white p-2 border border-info rounded-end d-flex align-items-center">
+                                    <img src="/assets/images/false.svg?v=2" width="16" height="16" alt="">
+                                </span>
+                            </span>
+                        </div>
+                        <div>
+                            <a href="https://github.com/laravel/laravel/releases/tag/v5.5.22" target="_BLANK" title="Laravel v5 v5.5.22 release on GitHub"><img src="/assets/images/github.png" width="25" height="25" alt=""></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        
+            <div class="card mb-3 shadow overflow-hidden" data-id="MDc6UmVsZWFzZTc2NDY2NTg=">
+                <div class="card-header bg-white">
+                    <div class="d-flex justify-content-between align-items-center">
+                        <div class="d-flex align-items-center">
+                            <h2 class="card-title" itemprop="version"><a id="v5.5.0">v5.5.0</a></h2>
+                        </div>
+                        <div>
+                            <a href="#v5.5.0">#</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-body">
+                    <h3>Added</h3>
+<ul>
+<li>Added <code>same_site</code> to <code>session.php</code> config (<a href="https://github.com/laravel/laravel/pull/4168">#4168</a>)</li>
+<li>Added <code>TrustProxies</code> middleware (<a href="https://github.com/laravel/laravel/commit/e23a1d284f134bfce258cf736ea8667a407ba50c">e23a1d2</a>, <a href="https://github.com/laravel/laravel/pull/4302">#4302</a>)</li>
+<li>Autoload commands (<a href="https://github.com/laravel/laravel/commit/5d54c21ea869a7a5b503f0899307e4728feed11b">5d54c21</a>)</li>
+<li>Added Whoops (<a href="https://github.com/laravel/laravel/pull/4364">#4364</a>)</li>
+</ul>
+<h3>Changed</h3>
+<ul>
+<li>Refactored exception handler (<em>too many commits</em>)</li>
+<li>Renamed <code>ModelFactory.php</code> to <code>UserFactory.php</code> to encourage separate files (<a href="https://github.com/laravel/laravel/commit/67a8a1157004c4373663ec4a9398780feb6d6fa4">67a8a11</a>)</li>
+<li>Use <code>RefreshDatabase</code> trait (<a href="https://github.com/laravel/laravel/commit/a536402228108da9423a0db1e0cf492f3f51c8b8">a536402</a>, <a href="https://github.com/laravel/laravel/pull/4373">#4373</a>)</li>
+<li>Use Composer's <code>@php</code> directive (<a href="https://github.com/laravel/laravel/pull/4278">#4278</a>)</li>
+<li>Use <code>post-autoload-dump</code> (<a href="https://github.com/laravel/laravel/commit/2f4d72699cdc9b7db953055287697a60b6d8b294">2f4d726</a>)</li>
+<li>Try to build session cookie name from app name (<a href="https://github.com/laravel/laravel/pull/4305">#4305</a>)</li>
+</ul>
+<h3>Fixed</h3>
+<ul>
+<li>Fixed Apache trailing slash redirect for subdirectory installs (<a href="https://github.com/laravel/laravel/pull/4344">#4344</a>)</li>
+</ul>
+<h3>Removed</h3>
+<ul>
+<li>Dropped <code>bootstrap/autoload.php</code> (<a href="https://github.com/laravel/laravel/pull/4226">#4226</a>, <a href="https://github.com/laravel/laravel/pull/4227">#4227</a>, <a href="https://github.com/laravel/laravel/commit/100f71e71a24fd8f339a7687557b77dd872b054b">100f71e</a>)</li>
+<li>Emptied <code>$dontReport</code> array on exception handler (<a href="https://github.com/laravel/laravel/commit/758392c30fa0b2651ca9409aebb040a64816dde4">758392c</a>)</li>
+<li>Removed <code>TinkerServiceProvider</code> (<a href="https://github.com/laravel/laravel/commit/6db0f350fbaa21b2acf788d10961aba983a19be2">6db0f35</a>)</li>
+<li>Removed migrations from autoload classmap (<a href="https://github.com/laravel/laravel/pull/4340">#4340</a>)</li>
+</ul>
+
+                </div>
+                <div class="card-footer">
+                    <div class="d-flex align-items-center justify-content-between">
+                        <div class="d-flex align-items-center">
+                            <span class="d-flex me-2">
+                                <span class="bg-primary text-white p-2 rounded-start d-flex align-items-center">Created</span>
+                                <span class="bg-white border border-primary p-2 rounded-end">
+                                    <time datetime="2017-08-30" itemprop="dateCreated">2017-08-30</time>
+                                </span>
+                            </span>
+                            <span class="d-flex me-2">
+                                <span class="bg-success text-white p-2 rounded-start d-flex align-items-center">Published</span>
+                                <span class="bg-white border border-success p-2 rounded-end">
+                                    <time datetime="2017-09-06" itemprop="datePublished">2017-09-06</time>
+                                </span>
+                            </span>
+                            <span class="d-flex me-2">
+                                <span class="bg-warning p-2 rounded-start d-flex align-items-center">Prerelease</span>
+                                <span class="bg-white p-2 border border-warning rounded-end d-flex align-items-center">
+                                    <img src="/assets/images/false.svg?v=2" width="16" height="16" alt="">
+                                </span>
+                            </span>
+                            <span class="d-flex me-2">
+                                <span class="bg-info p-2 rounded-start d-flex align-items-center">Draft</span>
+                                <span class="bg-white p-2 border border-info rounded-end d-flex align-items-center">
+                                    <img src="/assets/images/false.svg?v=2" width="16" height="16" alt="">
+                                </span>
+                            </span>
+                        </div>
+                        <div>
+                            <a href="https://github.com/laravel/laravel/releases/tag/v5.5.0" target="_BLANK" title="Laravel v5 v5.5.0 release on GitHub"><img src="/assets/images/github.png" width="25" height="25" alt=""></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        
+            <div class="card mb-3 shadow overflow-hidden" data-id="MDc6UmVsZWFzZTcxMTc3NDA=">
+                <div class="card-header bg-white">
+                    <div class="d-flex justify-content-between align-items-center">
+                        <div class="d-flex align-items-center">
+                            <h2 class="card-title" itemprop="version"><a id="v5.4.30">v5.4.30</a></h2>
+                        </div>
+                        <div>
+                            <a href="#v5.4.30">#</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-body">
+                    <h3>Changed</h3>
+<ul>
+<li>Simplified mix require (<a href="https://github.com/laravel/laravel/pull/4283">#4283</a>)</li>
+<li>Upgraded Laravel Mix to <code>^1.0</code> (<a href="https://github.com/laravel/laravel/pull/4294">#4294</a>)</li>
+<li>Upgraded <code>axios</code> and <code>cross-env</code> package (<a href="https://github.com/laravel/laravel/pull/4299">#4299</a>)</li>
+<li>Ignore Yarn error log (<a href="https://github.com/laravel/laravel/pull/4322">#4322</a>)</li>
+</ul>
+<h3>Fixed</h3>
+<ul>
+<li>Use <code>app()-&gt;getLocale()</code> (<a href="https://github.com/laravel/laravel/pull/4282">#4282</a>)</li>
+<li>Use quotes in <code>app.scss</code> (<a href="https://github.com/laravel/laravel/pull/4287">#4287</a>)</li>
+</ul>
+
+                </div>
+                <div class="card-footer">
+                    <div class="d-flex align-items-center justify-content-between">
+                        <div class="d-flex align-items-center">
+                            <span class="d-flex me-2">
+                                <span class="bg-primary text-white p-2 rounded-start d-flex align-items-center">Created</span>
+                                <span class="bg-white border border-primary p-2 rounded-end">
+                                    <time datetime="2017-07-04" itemprop="dateCreated">2017-07-04</time>
+                                </span>
+                            </span>
+                            <span class="d-flex me-2">
+                                <span class="bg-success text-white p-2 rounded-start d-flex align-items-center">Published</span>
+                                <span class="bg-white border border-success p-2 rounded-end">
+                                    <time datetime="2017-07-21" itemprop="datePublished">2017-07-21</time>
+                                </span>
+                            </span>
+                            <span class="d-flex me-2">
+                                <span class="bg-warning p-2 rounded-start d-flex align-items-center">Prerelease</span>
+                                <span class="bg-white p-2 border border-warning rounded-end d-flex align-items-center">
+                                    <img src="/assets/images/false.svg?v=2" width="16" height="16" alt="">
+                                </span>
+                            </span>
+                            <span class="d-flex me-2">
+                                <span class="bg-info p-2 rounded-start d-flex align-items-center">Draft</span>
+                                <span class="bg-white p-2 border border-info rounded-end d-flex align-items-center">
+                                    <img src="/assets/images/false.svg?v=2" width="16" height="16" alt="">
+                                </span>
+                            </span>
+                        </div>
+                        <div>
+                            <a href="https://github.com/laravel/laravel/releases/tag/v5.4.30" target="_BLANK" title="Laravel v5 v5.4.30 release on GitHub"><img src="/assets/images/github.png" width="25" height="25" alt=""></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        
+            <div class="card mb-3 shadow overflow-hidden" data-id="MDc6UmVsZWFzZTYzNzkxOTk=">
+                <div class="card-header bg-white">
+                    <div class="d-flex justify-content-between align-items-center">
+                        <div class="d-flex align-items-center">
+                            <h2 class="card-title" itemprop="version"><a id="v5.4.23">v5.4.23</a></h2>
+                        </div>
+                        <div>
+                            <a href="#v5.4.23">#</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-body">
+                    <h3>Added</h3>
+<ul>
+<li>Added SQL Server connection (<a href="https://github.com/laravel/laravel/pull/4253">#4253</a>, <a href="https://github.com/laravel/laravel/pull/4254">#4254</a>)</li>
+</ul>
+<h3>Changed</h3>
+<ul>
+<li>Switch to using meta</li>
+<li>Use CSRF token from <code>meta</code> tag, instead of <code>window.Laravel</code> object (<a href="https://github.com/laravel/laravel/pull/4260">#4260</a>)</li>
+<li>Log console error if CSRF token cannot be found (<a href="https://github.com/laravel/laravel/commit/1155245a596113dc2cd0e9083603fa11df2eacd9">1155245</a>)</li>
+</ul>
+<h3>Fixed</h3>
+<ul>
+<li>Added missing <code>ipv4</code> and <code>ipv6</code> validation messages (<a href="https://github.com/laravel/laravel/pull/4261">#4261</a>)</li>
+</ul>
+
+                </div>
+                <div class="card-footer">
+                    <div class="d-flex align-items-center justify-content-between">
+                        <div class="d-flex align-items-center">
+                            <span class="d-flex me-2">
+                                <span class="bg-primary text-white p-2 rounded-start d-flex align-items-center">Created</span>
+                                <span class="bg-white border border-primary p-2 rounded-end">
+                                    <time datetime="2017-05-11" itemprop="dateCreated">2017-05-11</time>
+                                </span>
+                            </span>
+                            <span class="d-flex me-2">
+                                <span class="bg-success text-white p-2 rounded-start d-flex align-items-center">Published</span>
+                                <span class="bg-white border border-success p-2 rounded-end">
+                                    <time datetime="2017-05-14" itemprop="datePublished">2017-05-14</time>
+                                </span>
+                            </span>
+                            <span class="d-flex me-2">
+                                <span class="bg-warning p-2 rounded-start d-flex align-items-center">Prerelease</span>
+                                <span class="bg-white p-2 border border-warning rounded-end d-flex align-items-center">
+                                    <img src="/assets/images/false.svg?v=2" width="16" height="16" alt="">
+                                </span>
+                            </span>
+                            <span class="d-flex me-2">
+                                <span class="bg-info p-2 rounded-start d-flex align-items-center">Draft</span>
+                                <span class="bg-white p-2 border border-info rounded-end d-flex align-items-center">
+                                    <img src="/assets/images/false.svg?v=2" width="16" height="16" alt="">
+                                </span>
+                            </span>
+                        </div>
+                        <div>
+                            <a href="https://github.com/laravel/laravel/releases/tag/v5.4.23" target="_BLANK" title="Laravel v5 v5.4.23 release on GitHub"><img src="/assets/images/github.png" width="25" height="25" alt=""></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        
+            <div class="card mb-3 shadow overflow-hidden" data-id="MDc6UmVsZWFzZTYzNzkxNjY=">
+                <div class="card-header bg-white">
+                    <div class="d-flex justify-content-between align-items-center">
+                        <div class="d-flex align-items-center">
+                            <h2 class="card-title" itemprop="version"><a id="v5.4.21">v5.4.21</a></h2>
+                        </div>
+                        <div>
+                            <a href="#v5.4.21">#</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-body">
+                    <h3>Added</h3>
+<ul>
+<li>Added <code>FILESYSTEM_DRIVER</code> and <code>FILESYSTEM_CLOUD</code> environment variables (<a href="https://github.com/laravel/laravel/pull/4236">#4236</a>)</li>
+</ul>
+<h3>Changed</h3>
+<ul>
+<li>Use lowercase doctype (<a href="https://github.com/laravel/laravel/pull/4241">#4241</a>)</li>
+</ul>
+
+                </div>
+                <div class="card-footer">
+                    <div class="d-flex align-items-center justify-content-between">
+                        <div class="d-flex align-items-center">
+                            <span class="d-flex me-2">
+                                <span class="bg-primary text-white p-2 rounded-start d-flex align-items-center">Created</span>
+                                <span class="bg-white border border-primary p-2 rounded-end">
+                                    <time datetime="2017-04-28" itemprop="dateCreated">2017-04-28</time>
+                                </span>
+                            </span>
+                            <span class="d-flex me-2">
+                                <span class="bg-success text-white p-2 rounded-start d-flex align-items-center">Published</span>
+                                <span class="bg-white border border-success p-2 rounded-end">
+                                    <time datetime="2017-05-14" itemprop="datePublished">2017-05-14</time>
+                                </span>
+                            </span>
+                            <span class="d-flex me-2">
+                                <span class="bg-warning p-2 rounded-start d-flex align-items-center">Prerelease</span>
+                                <span class="bg-white p-2 border border-warning rounded-end d-flex align-items-center">
+                                    <img src="/assets/images/false.svg?v=2" width="16" height="16" alt="">
+                                </span>
+                            </span>
+                            <span class="d-flex me-2">
+                                <span class="bg-info p-2 rounded-start d-flex align-items-center">Draft</span>
+                                <span class="bg-white p-2 border border-info rounded-end d-flex align-items-center">
+                                    <img src="/assets/images/false.svg?v=2" width="16" height="16" alt="">
+                                </span>
+                            </span>
+                        </div>
+                        <div>
+                            <a href="https://github.com/laravel/laravel/releases/tag/v5.4.21" target="_BLANK" title="Laravel v5 v5.4.21 release on GitHub"><img src="/assets/images/github.png" width="25" height="25" alt=""></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        
+            <div class="card mb-3 shadow overflow-hidden" data-id="MDc6UmVsZWFzZTYzNzkxMzk=">
+                <div class="card-header bg-white">
+                    <div class="d-flex justify-content-between align-items-center">
+                        <div class="d-flex align-items-center">
+                            <h2 class="card-title" itemprop="version"><a id="v5.4.19">v5.4.19</a></h2>
+                        </div>
+                        <div>
+                            <a href="#v5.4.19">#</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-body">
+                    <h3>Added</h3>
+<ul>
+<li>Added <code>optimize-autoloader</code> to <code>config</code> in <code>composer.json</code> (<a href="https://github.com/laravel/laravel/pull/4189">#4189</a>)</li>
+<li>Added <code>.vagrant</code> directory to <code>.gitignore</code> (<a href="https://github.com/laravel/laravel/pull/4191">#4191</a>)</li>
+<li>Added <code>npm run development</code> and <code>npm run prod</code> commands (<a href="https://github.com/laravel/laravel/pull/4190">#4190</a>, <a href="https://github.com/laravel/laravel/pull/4193">#4193</a>)</li>
+<li>Added <code>APP_NAME</code> environment variable (<a href="https://github.com/laravel/laravel/pull/4204">#4204</a>)</li>
+</ul>
+<h3>Changed</h3>
+<ul>
+<li>Changed Laravel Mix version to <code>0.*</code> (<a href="https://github.com/laravel/laravel/pull/4188">#4188</a>)</li>
+<li>Add to axios defaults instead of overwriting them (<a href="https://github.com/laravel/laravel/pull/4208">#4208</a>)</li>
+<li>Added <code>string</code> validation rule to <code>RegisterController</code> (<a href="https://github.com/laravel/laravel/pull/4212">#4212</a>)</li>
+<li>Moved Vue inclusion from <code>bootstrap.js</code> to <code>app.js</code> (<a href="https://github.com/laravel/laravel/commit/17ec5c51d60bb05985f287f09041c56fcd41d9ce">17ec5c5</a>)</li>
+<li>Only load libraries if present (<a href="https://github.com/laravel/laravel/commit/d905b2e7bede2967d37ed7b260cd9d526bb9cabd">d905b2e</a>)</li>
+<li>Ignore the NPM debug log (<a href="https://github.com/laravel/laravel/pull/4232">#4232</a>)</li>
+<li>Use fluent middleware definition in <code>LoginController</code> (<a href="https://github.com/laravel/laravel/pull/4229">#4229</a>)</li>
+</ul>
+
+                </div>
+                <div class="card-footer">
+                    <div class="d-flex align-items-center justify-content-between">
+                        <div class="d-flex align-items-center">
+                            <span class="d-flex me-2">
+                                <span class="bg-primary text-white p-2 rounded-start d-flex align-items-center">Created</span>
+                                <span class="bg-white border border-primary p-2 rounded-end">
+                                    <time datetime="2017-04-20" itemprop="dateCreated">2017-04-20</time>
+                                </span>
+                            </span>
+                            <span class="d-flex me-2">
+                                <span class="bg-success text-white p-2 rounded-start d-flex align-items-center">Published</span>
+                                <span class="bg-white border border-success p-2 rounded-end">
+                                    <time datetime="2017-05-14" itemprop="datePublished">2017-05-14</time>
+                                </span>
+                            </span>
+                            <span class="d-flex me-2">
+                                <span class="bg-warning p-2 rounded-start d-flex align-items-center">Prerelease</span>
+                                <span class="bg-white p-2 border border-warning rounded-end d-flex align-items-center">
+                                    <img src="/assets/images/false.svg?v=2" width="16" height="16" alt="">
+                                </span>
+                            </span>
+                            <span class="d-flex me-2">
+                                <span class="bg-info p-2 rounded-start d-flex align-items-center">Draft</span>
+                                <span class="bg-white p-2 border border-info rounded-end d-flex align-items-center">
+                                    <img src="/assets/images/false.svg?v=2" width="16" height="16" alt="">
+                                </span>
+                            </span>
+                        </div>
+                        <div>
+                            <a href="https://github.com/laravel/laravel/releases/tag/v5.4.19" target="_BLANK" title="Laravel v5 v5.4.19 release on GitHub"><img src="/assets/images/github.png" width="25" height="25" alt=""></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        
+            <div class="card mb-3 shadow overflow-hidden" data-id="MDc6UmVsZWFzZTYzNzkxMjc=">
+                <div class="card-header bg-white">
+                    <div class="d-flex justify-content-between align-items-center">
+                        <div class="d-flex align-items-center">
+                            <h2 class="card-title" itemprop="version"><a id="v5.4.16">v5.4.16</a></h2>
+                        </div>
+                        <div>
+                            <a href="#v5.4.16">#</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-body">
+                    <h3>Added</h3>
+<ul>
+<li>Added <code>unix_socket</code> to <code>mysql</code> in <code>config/database.php</code> ()<a href="https://github.com/laravel/laravel/pull/4179">#4179</a>)</li>
+<li>Added Pusher example code to <code>bootstrap.js</code> (<a href="https://github.com/laravel/laravel/commit/31c262301899b6cd1a4ce2631ad0e313b444b131">31c2623</a>)</li>
+</ul>
+<h3>Changed</h3>
+<ul>
+<li>Use <code>smtp.mailtrap.io</code> as default <code>MAIL_HOST</code> (<a href="https://github.com/laravel/laravel/pull/4182">#4182</a>)</li>
+<li>Use <code>resource_path()</code> in <code>config/view.php</code> (<a href="https://github.com/laravel/laravel/pull/4165">#4165</a>)</li>
+<li>Use <code>cross-env</code> binary (<a href="https://github.com/laravel/laravel/pull/4167">#4167</a>)</li>
+</ul>
+<h3>Removed</h3>
+<ul>
+<li>Remove index from password reset <code>token</code> column (<a href="https://github.com/laravel/laravel/pull/4180">#4180</a>)</li>
+</ul>
+
+                </div>
+                <div class="card-footer">
+                    <div class="d-flex align-items-center justify-content-between">
+                        <div class="d-flex align-items-center">
+                            <span class="d-flex me-2">
+                                <span class="bg-primary text-white p-2 rounded-start d-flex align-items-center">Created</span>
+                                <span class="bg-white border border-primary p-2 rounded-end">
+                                    <time datetime="2017-03-17" itemprop="dateCreated">2017-03-17</time>
+                                </span>
+                            </span>
+                            <span class="d-flex me-2">
+                                <span class="bg-success text-white p-2 rounded-start d-flex align-items-center">Published</span>
+                                <span class="bg-white border border-success p-2 rounded-end">
+                                    <time datetime="2017-05-14" itemprop="datePublished">2017-05-14</time>
+                                </span>
+                            </span>
+                            <span class="d-flex me-2">
+                                <span class="bg-warning p-2 rounded-start d-flex align-items-center">Prerelease</span>
+                                <span class="bg-white p-2 border border-warning rounded-end d-flex align-items-center">
+                                    <img src="/assets/images/false.svg?v=2" width="16" height="16" alt="">
+                                </span>
+                            </span>
+                            <span class="d-flex me-2">
+                                <span class="bg-info p-2 rounded-start d-flex align-items-center">Draft</span>
+                                <span class="bg-white p-2 border border-info rounded-end d-flex align-items-center">
+                                    <img src="/assets/images/false.svg?v=2" width="16" height="16" alt="">
+                                </span>
+                            </span>
+                        </div>
+                        <div>
+                            <a href="https://github.com/laravel/laravel/releases/tag/v5.4.16" target="_BLANK" title="Laravel v5 v5.4.16 release on GitHub"><img src="/assets/images/github.png" width="25" height="25" alt=""></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        
+    </section>
+
+
+        </div>
+    </main>
+    <footer class="container-fluid mt-3">
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <a class="lh-lg" href="https://www.flaticon.com/free-icons/release" title="release icons">Release icons created by SBTS2018 - Flaticon</a>
+                </div>
+                <div class="col text-end">
+                    <span class="lh-lg">Open Source on <a href="https://github.com/levidurfee/rlsz_dev" target="_BLANK">GitHub</a>.</span>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
